@@ -8,897 +8,763 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Zingy Travels | Holidays & Tours</title>
+<meta name="theme-color" content="#ffffff">
+
+<title>ZingyTravels | Holidays • Tours • Experiences</title>
 
 <style>
 
-* {
+*{box-sizing:border-box}
 
-  box-sizing: border-box;
+html{
 
-  margin: 0;
-
-  padding: 0;
+  scroll-behavior:smooth;
 
 }
 
-html {
+body{
 
-  scroll-behavior: smooth;
+  margin:0;
 
-}
+  background:#fff;
 
-body {
+  color:#13213d;
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-
-  color: #172033;
-
-  background: #f7f8fa;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 
 }
 
-button,
+button,a{
 
-input,
-
-textarea,
-
-select {
-
-  font: inherit;
+  font:inherit;
 
 }
 
-button {
+button{
 
-  cursor: pointer;
+  cursor:pointer;
 
 }
 
 /* HEADER */
 
-header {
+.header{
 
-  height: 82px;
+  height:88px;
 
-  background: #fff;
+  background:#fff;
 
-  display: flex;
+  display:flex;
 
-  align-items: center;
+  align-items:center;
 
-  justify-content: space-between;
+  justify-content:space-between;
 
-  padding: 0 6%;
+  padding:10px 24px;
 
-  position: relative;
+  position:sticky;
 
-  z-index: 10;
+  top:0;
 
-  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  z-index:20;
 
-}
-
-.logo {
-
-  font-size: 30px;
-
-  font-weight: 800;
-
-  letter-spacing: -1.5px;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
 
 }
 
-.logo span {
+.logo{
 
-  color: #f35b4f;
+  text-decoration:none;
+
+  color:#168ce9;
+
+  font-size:38px;
+
+  font-weight:900;
+
+  letter-spacing:-2.5px;
+
+  line-height:.8;
 
 }
 
-.logo strong {
+.logo span{
 
-  color: #182238;
+  color:#17304f;
 
 }
 
-.header-btn {
+.logo small{
 
-  background: #f35b4f;
+  display:block;
 
-  color: white;
+  margin-top:10px;
 
-  border: 0;
+  color:#748096;
 
-  border-radius: 25px;
+  font-size:8px;
 
-  padding: 12px 22px;
+  letter-spacing:4px;
 
-  font-weight: 700;
+  font-weight:700;
+
+}
+
+.header-icons{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+
+}
+
+.call{
+
+  text-decoration:none;
+
+  color:#142642;
+
+  font-size:31px;
+
+}
+
+.menu{
+
+  border:0;
+
+  background:transparent;
+
+  padding:5px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:5px;
+
+}
+
+.menu i{
+
+  width:31px;
+
+  height:4px;
+
+  background:#142642;
+
+  border-radius:5px;
+
+  display:block;
 
 }
 
 /* HERO */
 
-.hero {
+.hero{
 
-  min-height: 680px;
+  position:relative;
 
-  position: relative;
+  min-height:570px;
+
+  display:flex;
+
+  align-items:center;
+
+  overflow:hidden;
 
   background:
 
-    linear-gradient(rgba(10,25,45,.43), rgba(10,25,45,.55)),
+    linear-gradient(
 
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85")
+      90deg,
+
+      rgba(5,50,104,.55),
+
+      rgba(5,67,120,.25) 48%,
+
+      rgba(0,0,0,.04)
+
+    ),
+
+    url("https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1600&q=90")
 
     center/cover no-repeat;
 
-  color: white;
+}
 
-  display: flex;
+.hero-content{
 
-  align-items: center;
+  width:100%;
+
+  max-width:780px;
+
+  padding:46px 48px;
+
+  color:#fff;
 
 }
 
-.hero-content {
+.hero h1{
 
-  width: 100%;
+  margin:0 0 18px;
 
-  max-width: 1180px;
+  font-size:clamp(46px,9vw,78px);
 
-  margin: auto;
+  line-height:.98;
 
-  padding: 70px 6% 150px;
+  letter-spacing:-2px;
 
-}
-
-.hero h1 {
-
-  font-size: clamp(48px, 7vw, 82px);
-
-  line-height: .98;
-
-  max-width: 720px;
-
-  letter-spacing: -3px;
-
-  margin-bottom: 25px;
+  font-weight:900;
 
 }
 
-.hero p {
+.hero h1 .script{
 
-  max-width: 650px;
+  color:#ffd329;
 
-  font-size: 21px;
+  font-family:"Brush Script MT","Segoe Script",cursive;
 
-  line-height: 1.55;
+  font-size:1.06em;
 
-  margin-bottom: 32px;
-
-}
-
-.hero-buttons {
-
-  display: flex;
-
-  gap: 15px;
-
-  flex-wrap: wrap;
+  font-weight:700;
 
 }
 
-.primary-btn,
+.hero p{
 
-.secondary-btn {
+  max-width:590px;
 
-  border: 0;
+  margin:0 0 30px;
 
-  border-radius: 35px;
+  font-size:20px;
 
-  padding: 17px 34px;
+  line-height:1.45;
 
-  font-size: 17px;
-
-  font-weight: 750;
-
-  min-width: 190px;
+  color:#fff;
 
 }
 
-.primary-btn {
+.explore{
 
-  background: #f35b4f;
+  border:0;
 
-  color: white;
+  background:#ff5b55;
 
-}
+  color:#fff;
 
-.secondary-btn {
+  border-radius:50px;
 
-  background: white;
+  padding:18px 34px;
 
-  color: #172033;
+  font-size:20px;
 
-}
+  font-weight:800;
 
-/* SEARCH / ENQUIRY TRIGGER */
+  min-width:300px;
 
-.trip-box {
-
-  width: 88%;
-
-  max-width: 1080px;
-
-  background: white;
-
-  border-radius: 25px;
-
-  padding: 25px;
-
-  position: absolute;
-
-  bottom: -110px;
-
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  box-shadow: 0 18px 50px rgba(0,0,0,.16);
-
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr) auto;
-
-  gap: 15px;
-
-  z-index: 5;
+  box-shadow:0 9px 25px rgba(255,91,85,.35);
 
 }
 
-.trip-field {
+.explore span{
 
-  border: 1px solid #e0e4ea;
+  font-size:25px;
 
-  border-radius: 15px;
-
-  padding: 15px 18px;
-
-  background: #fbfcfe;
+  margin-left:8px;
 
 }
 
-.trip-field small {
+/* POPULAR HOLIDAYS */
 
-  display: block;
+.section{
 
-  color: #788294;
+  padding:38px 24px 60px;
 
-  font-size: 13px;
+  max-width:1100px;
 
-  text-transform: uppercase;
-
-  margin-bottom: 7px;
-
-  letter-spacing: .5px;
+  margin:auto;
 
 }
 
-.trip-field strong {
+.section h2{
 
-  font-size: 16px;
+  margin:0;
 
-}
+  font-size:clamp(35px,7vw,53px);
 
-.trip-button {
+  line-height:1;
 
-  border: 0;
-
-  border-radius: 15px;
-
-  background: #f35b4f;
-
-  color: white;
-
-  padding: 0 28px;
-
-  font-weight: 750;
+  letter-spacing:-1.5px;
 
 }
 
-/* SECTION */
+.blue-line{
 
-section {
+  width:64px;
 
-  padding: 150px 6% 80px;
+  height:5px;
 
-  max-width: 1250px;
+  background:#1d91f5;
 
-  margin: auto;
+  border-radius:8px;
 
-}
-
-.section-title {
-
-  text-align: center;
-
-  margin-bottom: 45px;
+  margin:16px 0 13px;
 
 }
 
-.section-title h2 {
+.sub{
 
-  font-size: 42px;
+  margin:0 0 27px;
 
-  margin-bottom: 10px;
+  color:#718097;
 
-}
-
-.section-title p {
-
-  color: #687386;
-
-  font-size: 17px;
+  font-size:18px;
 
 }
 
-/* HOLIDAY CARDS */
+.holiday-grid{
 
-.holiday-grid {
+  display:grid;
 
-  display: grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
 
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 25px;
+  gap:13px;
 
 }
 
-.holiday-card {
+.holiday{
 
-  background: white;
+  position:relative;
 
-  border-radius: 22px;
+  height:218px;
 
-  overflow: hidden;
+  padding:0;
 
-  box-shadow: 0 8px 28px rgba(20,30,50,.09);
+  border:0;
 
-  transition: .25s ease;
+  border-radius:20px;
 
-  cursor: pointer;
+  overflow:hidden;
 
-}
+  background:#ddd;
 
-.holiday-card:hover {
+  text-align:left;
 
-  transform: translateY(-7px);
-
-  box-shadow: 0 18px 38px rgba(20,30,50,.15);
+  box-shadow:0 7px 20px rgba(17,33,61,.13);
 
 }
 
-.card-image {
+.holiday img{
 
-  height: 230px;
+  position:absolute;
 
-  background-size: cover;
+  inset:0;
 
-  background-position: center;
+  width:100%;
 
-}
+  height:100%;
 
-.card-content {
-
-  padding: 22px;
+  object-fit:cover;
 
 }
 
-.card-content h3 {
+.holiday:after{
 
-  font-size: 23px;
+  content:"";
 
-  margin-bottom: 8px;
+  position:absolute;
 
-}
+  inset:0;
 
-.card-content p {
+  background:
 
-  color: #687386;
+    linear-gradient(
 
-  line-height: 1.5;
+      to top,
 
-  margin-bottom: 18px;
+      rgba(0,0,0,.68),
 
-}
+      rgba(0,0,0,0) 62%
 
-.enquire-link {
-
-  color: #f35b4f;
-
-  font-weight: 800;
+    );
 
 }
 
-/* WHY US */
+.holiday-name{
 
-.why {
+  position:absolute;
 
-  background: white;
+  left:18px;
 
-  max-width: none;
+  bottom:18px;
 
-}
+  z-index:2;
 
-.why-inner {
+  color:#fff;
 
-  max-width: 1150px;
+  font-size:25px;
 
-  margin: auto;
+  font-weight:850;
 
-}
+  line-height:1.02;
 
-.features {
-
-  display: grid;
-
-  grid-template-columns: repeat(3,1fr);
-
-  gap: 25px;
+  text-shadow:0 2px 6px rgba(0,0,0,.4);
 
 }
 
-.feature {
+.arrow{
 
-  padding: 30px;
+  position:absolute;
 
-  border-radius: 20px;
+  right:17px;
 
-  background: #f7f8fa;
+  bottom:17px;
 
-}
+  z-index:3;
 
-.feature-icon {
+  width:50px;
 
-  font-size: 35px;
+  height:50px;
 
-  margin-bottom: 15px;
+  border-radius:50%;
 
-}
+  border:0;
 
-.feature h3 {
+  background:#fff;
 
-  margin-bottom: 8px;
+  color:#172744;
 
-}
+  font-size:27px;
 
-.feature p {
+  display:grid;
 
-  color: #687386;
+  place-items:center;
 
-  line-height: 1.5;
-
-}
-
-/* CTA */
-
-.cta {
-
-  max-width: none;
-
-  padding: 80px 6%;
-
-  background: #172033;
-
-  color: white;
-
-  text-align: center;
+  box-shadow:0 5px 15px rgba(0,0,0,.18);
 
 }
 
-.cta h2 {
+/* ENQUIRY POPUP */
 
-  font-size: 42px;
+.enquiry-overlay{
 
-  margin-bottom: 15px;
+  display:none;
 
-}
+  position:fixed;
 
-.cta p {
+  inset:0;
 
-  color: #c7ceda;
+  z-index:100;
 
-  margin-bottom: 28px;
+  background:rgba(5,15,30,.62);
 
-}
+  align-items:flex-end;
 
-/* FOOTER */
+  justify-content:center;
 
-footer {
-
-  background: #101725;
-
-  color: white;
-
-  padding: 35px 6%;
-
-  text-align: center;
+  padding:14px;
 
 }
 
-footer p {
+.enquiry-overlay.open{
 
-  color: #9ca7b7;
-
-  margin-top: 8px;
+  display:flex;
 
 }
 
-/* FLOATING BUTTON */
+.enquiry{
 
-.floating-enquiry {
+  width:min(560px,100%);
 
-  position: fixed;
+  background:#fff;
 
-  right: 20px;
+  border-radius:28px 28px 18px 18px;
 
-  bottom: 25px;
-
-  width: 66px;
-
-  height: 66px;
-
-  border-radius: 50%;
-
-  border: 0;
-
-  background: #19d568;
-
-  color: white;
-
-  font-size: 28px;
-
-  box-shadow: 0 8px 25px rgba(0,0,0,.2);
-
-  z-index: 50;
+  padding:24px;
 
 }
 
-/* MODAL */
+.enquiry-head{
 
-.modal {
+  display:flex;
 
-  position: fixed;
+  align-items:center;
 
-  inset: 0;
-
-  background: rgba(8,15,27,.72);
-
-  display: none;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 20px;
-
-  z-index: 100;
+  justify-content:space-between;
 
 }
 
-.modal.active {
+.enquiry h3{
 
-  display: flex;
+  margin:0;
 
-}
-
-.modal-box {
-
-  width: 100%;
-
-  max-width: 520px;
-
-  max-height: 92vh;
-
-  overflow-y: auto;
-
-  background: white;
-
-  border-radius: 25px;
-
-  padding: 30px;
-
-  position: relative;
+  font-size:29px;
 
 }
 
-.close {
+.close{
 
-  position: absolute;
+  border:0;
 
-  right: 18px;
+  width:42px;
 
-  top: 15px;
+  height:42px;
 
-  border: 0;
+  border-radius:50%;
 
-  background: none;
+  background:#edf1f6;
 
-  font-size: 30px;
+  color:#142642;
 
-  color: #667085;
-
-}
-
-.modal-box h2 {
-
-  font-size: 30px;
-
-  margin-bottom: 8px;
+  font-size:27px;
 
 }
 
-.modal-box > p {
+.selected{
 
-  color: #687386;
+  margin:8px 0 17px;
 
-  margin-bottom: 22px;
-
-}
-
-.form-group {
-
-  margin-bottom: 15px;
+  color:#6e7b91;
 
 }
 
-.form-group label {
+.form{
 
-  display: block;
+  display:grid;
 
-  font-weight: 700;
-
-  margin-bottom: 7px;
+  gap:12px;
 
 }
 
-.form-group input,
+.form input,
 
-.form-group textarea,
+.form textarea{
 
-.form-group select {
+  width:100%;
 
-  width: 100%;
+  padding:15px;
 
-  border: 1px solid #dce1e8;
+  border:1px solid #d9e0e9;
 
-  border-radius: 12px;
+  border-radius:14px;
 
-  padding: 13px 14px;
+  background:#fbfcfe;
 
-  outline: none;
-
-  background: #fafbfc;
+  font-size:16px;
 
 }
 
-.form-group textarea {
+.form textarea{
 
-  min-height: 90px;
+  min-height:90px;
 
-  resize: vertical;
-
-}
-
-.submit-btn {
-
-  width: 100%;
-
-  border: 0;
-
-  background: #f35b4f;
-
-  color: white;
-
-  border-radius: 14px;
-
-  padding: 15px;
-
-  font-weight: 800;
-
-  font-size: 17px;
-
-  margin-top: 5px;
+  resize:vertical;
 
 }
 
-/* SUCCESS */
+.send{
 
-.success {
+  border:0;
 
-  display: none;
+  background:#ff5b55;
 
-  text-align: center;
+  color:#fff;
 
-  padding: 25px 5px;
+  border-radius:14px;
 
-}
+  padding:16px;
 
-.success-icon {
+  font-size:17px;
 
-  font-size: 55px;
-
-  margin-bottom: 10px;
+  font-weight:800;
 
 }
 
-.success h3 {
+/* FLOATING ENQUIRY */
 
-  font-size: 25px;
+.float{
 
-  margin-bottom: 8px;
+  position:fixed;
 
-}
+  right:18px;
 
-.success p {
+  bottom:18px;
 
-  color: #687386;
+  z-index:30;
+
+  width:64px;
+
+  height:64px;
+
+  border:0;
+
+  border-radius:50%;
+
+  background:#12d66b;
+
+  color:#fff;
+
+  font-size:28px;
+
+  box-shadow:0 9px 25px rgba(0,0,0,.2);
 
 }
 
 /* MOBILE */
 
-@media (max-width: 800px) {
+@media(max-width:600px){
 
-  header {
+  .header{
 
-    height: 70px;
+    height:88px;
 
-    padding: 0 22px;
-
-  }
-
-  .logo {
-
-    font-size: 25px;
+    padding:9px 16px;
 
   }
 
-  .header-btn {
+  .logo{
 
-    padding: 10px 16px;
-
-    font-size: 13px;
+    font-size:31px;
 
   }
 
-  .hero {
+  .logo small{
 
-    min-height: 700px;
+    font-size:6.5px;
 
-    align-items: flex-start;
+    letter-spacing:3px;
 
-  }
-
-  .hero-content {
-
-    padding: 55px 30px 150px;
+    margin-top:9px;
 
   }
 
-  .hero h1 {
+  .header-icons{
 
-    font-size: 50px;
-
-    letter-spacing: -2px;
-
-    max-width: 500px;
+    gap:15px;
 
   }
 
-  .hero p {
+  .call{
 
-    font-size: 18px;
-
-  }
-
-  .hero-buttons {
-
-    display: block;
+    font-size:28px;
 
   }
 
-  .primary-btn,
+  .hero{
 
-  .secondary-btn {
+    min-height:570px;
 
-    width: 100%;
-
-    margin-bottom: 12px;
+    background-position:center;
 
   }
 
-  .trip-box {
+  .hero-content{
 
-    width: calc(100% - 36px);
+    padding:38px 24px 42px;
 
-    bottom: -230px;
-
-    padding: 20px;
-
-    display: block;
+    align-self:flex-end;
 
   }
 
-  .trip-field {
+  .hero h1{
 
-    margin-bottom: 12px;
+    font-size:48px;
 
-    padding: 16px;
-
-  }
-
-  .trip-button {
-
-    width: 100%;
-
-    padding: 16px;
+    letter-spacing:-1.7px;
 
   }
 
-  section {
+  .hero p{
 
-    padding: 280px 20px 60px;
+    font-size:18px;
 
-  }
-
-  .holiday-grid {
-
-    grid-template-columns: 1fr;
-
-    gap: 20px;
+    max-width:360px;
 
   }
 
-  .card-image {
+  .explore{
 
-    height: 220px;
+    min-width:0;
 
-  }
+    width:100%;
 
-  .section-title h2 {
+    max-width:345px;
 
-    font-size: 34px;
-
-  }
-
-  .features {
-
-    grid-template-columns: 1fr;
+    font-size:19px;
 
   }
 
-  .cta h2 {
+  .section{
 
-    font-size: 32px;
+    padding:37px 16px 55px;
 
   }
 
-  .modal-box {
+  .section h2{
 
-    padding: 25px 20px;
+    font-size:39px;
+
+  }
+
+  .sub{
+
+    font-size:17px;
+
+  }
+
+  .holiday-grid{
+
+    gap:10px;
+
+  }
+
+  .holiday{
+
+    height:205px;
+
+    border-radius:18px;
+
+  }
+
+  .holiday-name{
+
+    font-size:21px;
+
+    left:16px;
+
+    bottom:16px;
+
+  }
+
+  .arrow{
+
+    width:45px;
+
+    height:45px;
+
+    right:14px;
+
+    bottom:14px;
+
+    font-size:24px;
 
   }
 
 }
 
-@media (min-width: 801px) and (max-width: 1050px) {
+@media(max-width:390px){
 
-  .holiday-grid {
+  .holiday{
 
-    grid-template-columns: repeat(2,1fr);
+    height:190px;
+
+  }
+
+  .holiday-name{
+
+    font-size:19px;
 
   }
 
@@ -912,593 +778,459 @@ footer p {
 
 <!-- HEADER -->
 
-<header>
+<header class="header">
 
-  <div class="logo">
+  <a class="logo" href="#">
 
-    <span>Zingy</span><strong>Travels</strong>
+    Zingy<span>Travels</span>
+
+    <small>
+
+      HOLIDAYS · TOURS · EXPERIENCES
+
+    </small>
+
+  </a>
+
+  <div class="header-icons">
+
+    <a
+
+      class="call"
+
+      href="tel:+919999999999"
+
+      aria-label="Call ZingyTravels"
+
+    >
+
+      ☎
+
+    </a>
+
+    <button
+
+      class="menu"
+
+      onclick="openEnquiry()"
+
+      aria-label="Menu"
+
+    >
+
+      <i></i>
+
+      <i></i>
+
+      <i></i>
+
+    </button>
 
   </div>
-
-  <button class="header-btn" onclick="openEnquiry()">
-
-    Send Enquiry
-
-  </button>
 
 </header>
 
 <!-- HERO -->
 
-<div class="hero">
+<section class="hero">
 
   <div class="hero-content">
 
     <h1>
 
-      Your journey<br>
+      Your Next<br>
 
-      starts here.
+      <span class="script">
+
+        Holiday Story
+
+      </span><br>
+
+      Starts Here.
 
     </h1>
 
     <p>
 
-      Discover unforgettable holidays, beautiful destinations
+      Discover unforgettable holidays, beautiful
 
-      and travel experiences designed around you.
+      destinations and travel experiences designed
+
+      around you.
 
     </p>
 
-    <div class="hero-buttons">
+    <button
 
-      <button class="primary-btn" onclick="openEnquiry()">
+      class="explore"
 
-        Explore Holidays
+      onclick="openEnquiry('Holiday enquiry')"
 
-      </button>
+    >
 
-      <button class="secondary-btn" onclick="openEnquiry()">
+      Explore Holidays
 
-        Plan My Trip
-
-      </button>
-
-    </div>
-
-  </div>
-
-  <!-- TRIP BOX -->
-
-  <div class="trip-box">
-
-    <div class="trip-field" onclick="openEnquiry()">
-
-      <small>Destination</small>
-
-      <strong>Where do you want to go?</strong>
-
-    </div>
-
-    <div class="trip-field" onclick="openEnquiry()">
-
-      <small>Travel Date</small>
-
-      <strong>Select your dates</strong>
-
-    </div>
-
-    <div class="trip-field" onclick="openEnquiry()">
-
-      <small>Travellers</small>
-
-      <strong>2 Adults</strong>
-
-    </div>
-
-    <button class="trip-button" onclick="openEnquiry()">
-
-      Search Trips
+      <span>→</span>
 
     </button>
 
   </div>
 
-</div>
+</section>
 
-<!-- HOLIDAYS -->
+<!-- POPULAR HOLIDAYS -->
 
-<section>
+<section class="section" id="holidays">
 
-  <div class="section-title">
+  <h2>
 
-    <h2>Popular Holidays</h2>
+    Popular Holidays
 
-    <p>
+  </h2>
 
-      Tell us where you want to go and we'll help plan your perfect trip.
+  <div class="blue-line"></div>
 
-    </p>
+  <p class="sub">
 
-  </div>
+    Handpicked destinations for your next getaway
+
+  </p>
 
   <div class="holiday-grid">
 
     <!-- MALDIVES -->
 
-    <div class="holiday-card" onclick="openEnquiry('Maldives Holidays')">
+    <button
 
-      <div class="card-image"
+      class="holiday"
 
-        style="background-image:url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=85');">
+      onclick="openEnquiry('Maldives Holidays')"
 
-      </div>
+    >
 
-      <div class="card-content">
+      <img
 
-        <h3>Maldives Holidays</h3>
+        src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=88"
 
-        <p>
+        alt="Maldives Holidays"
 
-          Tropical beaches, luxury resorts and unforgettable island escapes.
+      >
 
-        </p>
+      <span class="holiday-name">
 
-        <div class="enquire-link">
+        Maldives<br>
 
-          Enquire Now →
+        Holidays
 
-        </div>
+      </span>
 
-      </div>
+      <span class="arrow">
 
-    </div>
+        →
+
+      </span>
+
+    </button>
 
     <!-- KERALA -->
 
-    <div class="holiday-card" onclick="openEnquiry('Kerala Tours')">
+    <button
 
-      <div class="card-image"
+      class="holiday"
 
-        style="background-image:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=85');">
+      onclick="openEnquiry('Kerala Tours')"
 
-      </div>
+    >
 
-      <div class="card-content">
+      <img
 
-        <h3>Kerala Tours</h3>
+        src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=88"
 
-        <p>
+        alt="Kerala Tours"
 
-          Explore Munnar, Alleppey, backwaters, beaches and Kerala culture.
+      >
 
-        </p>
+      <span class="holiday-name">
 
-        <div class="enquire-link">
+        Kerala<br>
 
-          Enquire Now →
+        Tours
 
-        </div>
+      </span>
 
-      </div>
+      <span class="arrow">
 
-    </div>
+        →
+
+      </span>
+
+    </button>
 
     <!-- SRI LANKA -->
 
-    <div class="holiday-card" onclick="openEnquiry('Sri Lanka Holidays')">
+    <button
 
-      <div class="card-image"
+      class="holiday"
 
-        style="background-image:url('https://images.unsplash.com/photo-1586613830265-4c1b0b2b2b5b?auto=format&fit=crop&w=1000&q=85');">
+      onclick="openEnquiry('Sri Lanka Holidays')"
 
-      </div>
+    >
 
-      <div class="card-content">
+      <img
 
-        <h3>Sri Lanka Holidays</h3>
+        src="https://images.unsplash.com/photo-1586613835200-ae4b4c4f1e3b?auto=format&fit=crop&w=900&q=88"
 
-        <p>
+        alt="Sri Lanka Holidays"
 
-          Beaches, wildlife, Kandy and scenic journeys across Sri Lanka.
+      >
 
-        </p>
+      <span class="holiday-name">
 
-        <div class="enquire-link">
+        Sri Lanka<br>
 
-          Enquire Now →
+        Holidays
 
-        </div>
+      </span>
 
-      </div>
+      <span class="arrow">
 
-    </div>
+        →
+
+      </span>
+
+    </button>
 
     <!-- SINGAPORE -->
 
-    <div class="holiday-card" onclick="openEnquiry('Singapore Holidays')">
+    <button
 
-      <div class="card-image"
+      class="holiday"
 
-        style="background-image:url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=85');">
+      onclick="openEnquiry('Singapore Holidays')"
 
-      </div>
+    >
 
-      <div class="card-content">
+      <img
 
-        <h3>Singapore Holidays</h3>
+        src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=88"
 
-        <p>
+        alt="Singapore Holidays"
 
-          Marina Bay, Universal Studios, shopping and exciting family experiences.
+      >
 
-        </p>
+      <span class="holiday-name">
 
-        <div class="enquire-link">
+        Singapore<br>
 
-          Enquire Now →
+        Holidays
 
-        </div>
+      </span>
 
-      </div>
+      <span class="arrow">
 
-    </div>
+        →
+
+      </span>
+
+    </button>
 
     <!-- THAILAND -->
 
-    <div class="holiday-card" onclick="openEnquiry('Thailand Holidays')">
+    <button
 
-      <div class="card-image"
+      class="holiday"
 
-        style="background-image:url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1000&q=85');">
+      onclick="openEnquiry('Thailand Holidays')"
 
-      </div>
+    >
 
-      <div class="card-content">
+      <img
 
-        <h3>Thailand Holidays</h3>
+        src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=900&q=88"
 
-        <p>
+        alt="Thailand Holidays"
 
-          Bangkok, Phuket, Krabi and tropical experiences made for you.
+      >
 
-        </p>
+      <span class="holiday-name">
 
-        <div class="enquire-link">
+        Thailand<br>
 
-          Enquire Now →
+        Holidays
 
-        </div>
+      </span>
 
-      </div>
+      <span class="arrow">
 
-    </div>
+        →
+
+      </span>
+
+    </button>
 
     <!-- AMRITSAR -->
 
-    <div class="holiday-card" onclick="openEnquiry('Amritsar - Golden Temple')">
+    <button
 
-      <div class="card-image"
+      class="holiday"
 
-        style="background-image:url('https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?auto=format&fit=crop&w=1000&q=85');">
+      onclick="openEnquiry('Amritsar Golden Temple')"
 
-      </div>
+    >
 
-      <div class="card-content">
+      <img
 
-        <h3>Amritsar – Golden Temple</h3>
+        src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=900&q=88"
 
-        <p>
+        alt="Amritsar Golden Temple"
 
-          Visit the Golden Temple, Wagah Border and experience Amritsar's heritage.
+      >
 
-        </p>
+      <span class="holiday-name">
 
-        <div class="enquire-link">
+        Amritsar<br>
 
-          Enquire Now →
+        Golden Temple
 
-        </div>
+      </span>
 
-      </div>
+      <span class="arrow">
 
-    </div>
+        →
 
-  </div>
+      </span>
 
-</section>
-
-<!-- WHY ZINGY -->
-
-<section class="why">
-
-  <div class="why-inner">
-
-    <div class="section-title">
-
-      <h2>Why Travel With Zingy?</h2>
-
-      <p>
-
-        Personal service from planning to your return home.
-
-      </p>
-
-    </div>
-
-    <div class="features">
-
-      <div class="feature">
-
-        <div class="feature-icon">✈️</div>
-
-        <h3>Tailor-Made Holidays</h3>
-
-        <p>
-
-          Trips designed around your dates, budget and travel preferences.
-
-        </p>
-
-      </div>
-
-      <div class="feature">
-
-        <div class="feature-icon">🌍</div>
-
-        <h3>Global Destinations</h3>
-
-        <p>
-
-          Discover destinations across India and around the world.
-
-        </p>
-
-      </div>
-
-      <div class="feature">
-
-        <div class="feature-icon">🤝</div>
-
-        <h3>Personal Assistance</h3>
-
-        <p>
-
-          Speak with our travel team and get help throughout your journey.
-
-        </p>
-
-      </div>
-
-    </div>
+    </button>
 
   </div>
 
 </section>
 
-<!-- CTA -->
+<!-- FLOATING ENQUIRY BUTTON -->
 
-<section class="cta">
+<button
 
-  <h2>Ready to plan your next holiday?</h2>
+  class="float"
 
-  <p>
+  onclick="openEnquiry()"
 
-    Tell us what you're looking for and our travel team will contact you.
+  aria-label="Send enquiry"
 
-  </p>
-
-  <button class="primary-btn" onclick="openEnquiry()">
-
-    Send Enquiry
-
-  </button>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-  <div class="logo">
-
-    <span>Zingy</span><strong>Travels</strong>
-
-  </div>
-
-  <p>
-
-    Your journey starts here.
-
-  </p>
-
-</footer>
-
-<!-- FLOATING ENQUIRY -->
-
-<button class="floating-enquiry" onclick="openEnquiry()" aria-label="Send Enquiry">
+>
 
   ☎
 
 </button>
 
-<!-- ENQUIRY MODAL -->
+<!-- ENQUIRY POPUP -->
 
-<div class="modal" id="enquiryModal">
+<div
 
-  <div class="modal-box">
+  class="enquiry-overlay"
 
-    <button class="close" onclick="closeEnquiry()">
+  id="overlay"
 
-      ×
+  onclick="if(event.target===this) closeEnquiry()"
 
-    </button>
+>
 
-    <div id="enquiryContent">
+  <div class="enquiry">
 
-      <h2>Send Enquiry</h2>
+    <div class="enquiry-head">
 
-      <p>
+      <h3>
 
-        Tell us about your holiday and our travel team will get in touch.
+        Send Enquiry
 
-      </p>
+      </h3>
 
-      <form onsubmit="submitEnquiry(event)">
+      <button
 
-        <div class="form-group">
+        class="close"
 
-          <label>Your Name</label>
+        onclick="closeEnquiry()"
 
-          <input
+      >
 
-            type="text"
+        ×
 
-            id="name"
-
-            placeholder="Enter your name"
-
-            required
-
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Phone Number</label>
-
-          <input
-
-            type="tel"
-
-            id="phone"
-
-            placeholder="Enter your phone number"
-
-            required
-
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Email</label>
-
-          <input
-
-            type="email"
-
-            id="email"
-
-            placeholder="Enter your email"
-
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Holiday / Destination</label>
-
-          <select id="destination">
-
-            <option value="">Select destination</option>
-
-            <option>Maldives Holidays</option>
-
-            <option>Kerala Tours</option>
-
-            <option>Sri Lanka Holidays</option>
-
-            <option>Singapore Holidays</option>
-
-            <option>Thailand Holidays</option>
-
-            <option>Amritsar - Golden Temple</option>
-
-            <option>Other</option>
-
-          </select>
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Travel Date</label>
-
-          <input
-
-            type="date"
-
-            id="date"
-
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Travellers</label>
-
-          <select id="travellers">
-
-            <option>1 Adult</option>
-
-            <option selected>2 Adults</option>
-
-            <option>3 Adults</option>
-
-            <option>4 Adults</option>
-
-            <option>5+ Adults</option>
-
-            <option>Family</option>
-
-          </select>
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Message</label>
-
-          <textarea
-
-            id="message"
-
-            placeholder="Tell us what you are looking for..."
-
-          ></textarea>
-
-        </div>
-
-        <button class="submit-btn" type="submit">
-
-          Send Enquiry
-
-        </button>
-
-      </form>
+      </button>
 
     </div>
 
-    <div class="success" id="successMessage">
+    <p
 
-      <div class="success-icon">✓</div>
+      class="selected"
 
-      <h3>Thank You!</h3>
+      id="selected"
 
-      <p>
+    >
 
-        Your enquiry has been received.
+      Tell us where you would like to travel.
 
-        Our travel team will contact you shortly.
+    </p>
 
-      </p>
+    <form
 
-    </div>
+      class="form"
+
+      onsubmit="submitEnquiry(event)"
+
+    >
+
+      <input
+
+        id="name"
+
+        required
+
+        placeholder="Your name"
+
+      >
+
+      <input
+
+        id="phone"
+
+        required
+
+        type="tel"
+
+        placeholder="Mobile number"
+
+      >
+
+      <input
+
+        id="email"
+
+        type="email"
+
+        placeholder="Email address"
+
+      >
+
+      <textarea
+
+        id="message"
+
+        placeholder="Tell us about your holiday"
+
+      ></textarea>
+
+      <button
+
+        class="send"
+
+        type="submit"
+
+      >
+
+        Send Enquiry
+
+      </button>
+
+    </form>
 
   </div>
 
@@ -1506,63 +1238,127 @@ footer p {
 
 <script>
 
-/* OPEN ENQUIRY */
+function openEnquiry(trip){
 
-function openEnquiry(destination = "") {
+  document.getElementById("selected").textContent =
 
-  document.getElementById("enquiryModal").classList.add("active");
+    trip
 
-  if (destination) {
+      ? "Enquiry for: " + trip
 
-    document.getElementById("destination").value = destination;
+      : "Tell us where you would like to travel.";
 
-  }
+  document
+
+    .getElementById("overlay")
+
+    .classList
+
+    .add("open");
+
+  document.body.style.overflow="hidden";
+
+}
+
+function closeEnquiry(){
+
+  document
+
+    .getElementById("overlay")
+
+    .classList
+
+    .remove("open");
+
+  document.body.style.overflow="";
 
 }
 
-/* CLOSE ENQUIRY */
+function submitEnquiry(e){
 
-function closeEnquiry() {
+  e.preventDefault();
 
-  document.getElementById("enquiryModal").classList.remove("active");
+  const name =
+
+    document.getElementById("name").value.trim();
+
+  const phone =
+
+    document.getElementById("phone").value.trim();
+
+  const email =
+
+    document.getElementById("email").value.trim();
+
+  const message =
+
+    document.getElementById("message").value.trim();
+
+  const trip =
+
+    document.getElementById("selected").textContent;
+
+  /*
+
+    IMPORTANT:
+
+    Replace 919999999999 with your
+
+    actual ZingyTravels WhatsApp number.
+
+  */
+
+  const whatsappNumber =
+
+    "919999999999";
+
+  const text = encodeURIComponent(
+
+    "New ZingyTravels enquiry\n" +
+
+    trip +
+
+    "\nName: " + name +
+
+    "\nMobile: " + phone +
+
+    "\nEmail: " + email +
+
+    "\nMessage: " + message
+
+  );
+
+  window.open(
+
+    "https://wa.me/" +
+
+    whatsappNumber +
+
+    "?text=" +
+
+    text,
+
+    "_blank"
+
+  );
 
 }
 
-/* CLICK OUTSIDE MODAL */
+document.addEventListener(
 
-document.getElementById("enquiryModal").addEventListener("click", function(e) {
+  "keydown",
 
-  if (e.target === this) {
+  function(e){
 
-    closeEnquiry();
+    if(e.key === "Escape"){
 
-  }
+      closeEnquiry();
 
-});
-
-/* ESCAPE KEY */
-
-document.addEventListener("keydown", function(e) {
-
-  if (e.key === "Escape") {
-
-    closeEnquiry();
+    }
 
   }
 
-});
-
-/* FORM SUBMISSION */
-
-function submitEnquiry(event) {
-
-  event.preventDefault();
-
-  document.getElementById("enquiryContent").style.display = "none";
-
-  document.getElementById("successMessage").style.display = "block";
-
-}
+);
 
 </script>
 
