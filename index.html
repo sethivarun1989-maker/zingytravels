@@ -799,7 +799,339 @@ footer p {
     }
 
 }
+/* ===== ZINGY TRAVELS - NEW MODERN DESIGN ===== */
 
+body {
+
+  background: #f7f9fc;
+
+}
+
+/* Header */
+
+header {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  padding: 18px 6%;
+
+  z-index: 1000;
+
+  background: rgba(255,255,255,0.92);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+
+}
+
+.navbar {
+
+  max-width: 1200px;
+
+}
+
+.logo {
+
+  color: #073b59 !important;
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+}
+
+.logo span {
+
+  color: #f5a623 !important;
+
+}
+
+nav {
+
+  gap: 28px;
+
+}
+
+nav a {
+
+  color: #12324a !important;
+
+  font-weight: 600;
+
+}
+
+nav a:hover {
+
+  color: #f5a623 !important;
+
+}
+
+/* Modern Hero */
+
+.hero {
+
+  min-height: 760px;
+
+  height: 92vh;
+
+  display: flex;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+
+    linear-gradient(
+
+      90deg,
+
+      rgba(4,32,50,0.88) 0%,
+
+      rgba(4,32,50,0.58) 45%,
+
+      rgba(4,32,50,0.15) 100%
+
+    ),
+
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85")
+
+    center center / cover no-repeat;
+
+}
+
+.hero::before,
+
+.hero::after {
+
+  display: none;
+
+}
+
+.hero-content {
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 140px 6% 80px;
+
+  z-index: 3;
+
+}
+
+.tag {
+
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.16);
+
+  border: 1px solid rgba(255,255,255,0.35);
+
+  backdrop-filter: blur(10px);
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 22px;
+
+}
+
+.hero h1 {
+
+  max-width: 760px;
+
+  color: #fff;
+
+  font-size: clamp(48px, 7vw, 82px);
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+
+  margin-bottom: 24px;
+
+}
+
+.hero h1 span {
+
+  color: #ffd166 !important;
+
+}
+
+.hero-text {
+
+  max-width: 620px;
+
+  color: rgba(255,255,255,0.92);
+
+  font-size: 20px;
+
+  line-height: 1.7;
+
+  margin-top: 0;
+
+}
+
+.buttons {
+
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 32px;
+
+  flex-wrap: wrap;
+
+}
+
+.btn {
+
+  padding: 16px 28px;
+
+  border-radius: 50px;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  transition: 0.25s ease;
+
+}
+
+.primary {
+
+  background: #f5a623 !important;
+
+  color: #12324a !important;
+
+  box-shadow: 0 10px 30px rgba(245,166,35,0.3);
+
+}
+
+.primary:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 35px rgba(245,166,35,0.4);
+
+}
+
+.secondary {
+
+  background: rgba(255,255,255,0.14) !important;
+
+  border: 1px solid rgba(255,255,255,0.6) !important;
+
+  color: #fff !important;
+
+  backdrop-filter: blur(10px);
+
+}
+
+.secondary:hover {
+
+  background: #fff !important;
+
+  color: #12324a !important;
+
+  transform: translateY(-3px);
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  header {
+
+    padding: 16px 5%;
+
+  }
+
+  .navbar {
+
+    width: 100%;
+
+  }
+
+  nav {
+
+    gap: 15px;
+
+  }
+
+  nav a {
+
+    font-size: 13px;
+
+  }
+
+  .hero {
+
+    min-height: 720px;
+
+    height: auto;
+
+    background-position: center;
+
+  }
+
+  .hero-content {
+
+    padding: 150px 7% 80px;
+
+  }
+
+  .hero h1 {
+
+    font-size: clamp(44px, 13vw, 65px);
+
+    letter-spacing: -2px;
+
+  }
+
+  .hero-text {
+
+    font-size: 17px;
+
+  }
+
+  .buttons {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+  .btn {
+
+    width: auto;
+
+    padding: 14px 24px;
+
+  }
+
+}
 </style>
 
 </head>
