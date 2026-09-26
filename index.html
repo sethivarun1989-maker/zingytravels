@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zingy Travels | Your World. Your Journey. Your Way.</title>
+  <meta name="description" content="Zingy Travels - personalized holidays, flights, hotels and travel experiences from Gurgaon.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#123047;background:#fff}
+    header{position:absolute;top:0;left:0;width:100%;z-index:5;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;color:white}
+    .logo{font-size:25px;font-weight:800;letter-spacing:.3px}.logo span{color:#ffd166}
+    nav{display:flex;gap:26px;align-items:center}nav a{color:#fff;text-decoration:none;font-weight:600}
+    .menu{display:none;font-size:28px}
+    .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(120deg,#0a4770,#1495a8 55%,#71d1d0)}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,30,50,.72),rgba(3,30,50,.15))}
+    .waves{position:absolute;right:-8%;bottom:-18%;width:70vw;height:70vw;border-radius:50%;background:rgba(255,255,255,.10);box-shadow:0 0 0 60px rgba(255,255,255,.06),0 0 0 120px rgba(255,255,255,.04)}
+    .content{position:relative;z-index:2;color:white;max-width:700px;margin-left:8%;padding-top:50px}
+    .tag{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:30px;margin-bottom:20px;font-weight:600}
+    h1{font-size:clamp(45px,7vw,78px);line-height:.98;margin-bottom:22px}
+    h1 span{color:#ffd166}.subtitle{font-size:21px;line-height:1.55;max-width:600px;color:#eefaff}
+    .buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+    .btn{display:inline-block;text-decoration:none;padding:15px 24px;border-radius:30px;font-weight:800}
+    .primary{background:#ffd166;color:#17324a}.secondary{border:1px solid rgba(255,255,255,.6);color:white;background:rgba(255,255,255,.08)}
+    section{padding:75px 7%}.intro{text-align:center}.intro h2{font-size:38px;margin-bottom:12px}.intro p{max-width:700px;margin:auto;color:#5c6f7d;line-height:1.7}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}.card{padding:30px;border-radius:20px;background:#f5fbfd;box-shadow:0 8px 28px rgba(15,65,90,.08)}.icon{font-size:35px;margin-bottom:14px}.card h3{margin-bottom:9px}.card p{color:#657783;line-height:1.6}
+    .cta{background:#083b5b;color:#fff;text-align:center}.cta p{margin:12px auto 24px;color:#d9edf5}
+    footer{background:#062b42;color:#b9d0da;padding:28px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:750px){nav{display:none}.menu{display:block}.content{margin:0 7%;padding-top:70px}.subtitle{font-size:18px}.cards{grid-template-columns:1fr}.hero{min-height:88vh}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">Zingy<span>Travels</span></div>
+  <nav>
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="menu">☰</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="waves"></div>
+  <div class="content">
+    <div class="tag">✈ Gurgaon • Travel Made Personal</div>
+    <h1>Your World.<br><span>Your Journey.</span><br>Your Way.</h1>
+    <p class="subtitle">Discover holidays, flights, hotels and unforgettable experiences — planned around you.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#contact">Plan My Trip</a>
+      <a class="btn secondary" href="tel:+919999999999">Call Us Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro" id="services">
+  <h2>Travel, your way</h2>
+  <p>From a quick getaway to a dream international holiday, Zingy Travels helps you plan the details with a personal touch.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🌴</div><h3>Holiday Packages</h3><p>Personalized domestic and international trips designed around your dates, interests and budget.</p></div>
+    <div class="card"><div class="icon">✈️</div><h3>Flights & Hotels</h3><p>Travel arrangements made simple, with support from planning through your journey.</p></div>
+    <div class="card"><div class="icon">🧳</div><h3>Tailor-Made Travel</h3><p>Tell us what you want to experience and we'll help shape the itinerary around you.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="intro">
+    <h2>Why Zingy Travels?</h2>
+    <p>We believe travel should feel exciting, personal and easy. Based in Gurgaon, we help travelers turn ideas into practical, memorable journeys.</p>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <h2>Ready to plan your next journey?</h2>
+  <p>Tell us where you want to go and we'll help you take the next step.</p>
+  <a class="btn primary" href="mailto:hello@zingytravels.com?subject=Plan%20My%20Trip">Start Planning</a>
+</section>
+</main>
+
+<footer>
+  <div>© 2026 Zingy Travels</div>
+  <div>Gurgaon, India • Your World. Your Journey. Your Way.</div>
+</footer>
+</body>
+</html>
