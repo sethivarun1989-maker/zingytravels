@@ -4,2207 +4,2151 @@
 
 <head>
 
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ZingyTravels | Holidays & Tours</title>
+  <title>ZingyTravels | Travel • Explore • Experience</title>
 
-<meta name="description" content="ZingyTravels - Holiday packages, international tours, domestic holidays and customized travel experiences.">
+  <meta name="description" content="ZingyTravels - Worldwide holidays, international tours and customised travel experiences.">
 
-<style>
+  <style>
 
-*{
+    * {
 
-  margin:0;
+      margin: 0;
 
-  padding:0;
+      padding: 0;
 
-  box-sizing:border-box;
+      box-sizing: border-box;
 
-}
+    }
 
-html{
+    html {
 
-  scroll-behavior:smooth;
+      scroll-behavior: smooth;
 
-}
+    }
 
-body{
+    body {
 
-  font-family:Arial,Helvetica,sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
 
-  background:#f7f9fc;
+      background: #f7f8fa;
 
-  color:#172033;
+      color: #17233d;
 
-  line-height:1.5;
+      overflow-x: hidden;
 
-}
+    }
 
-a{
+    button {
 
-  text-decoration:none;
+      font-family: inherit;
 
-  color:inherit;
+      cursor: pointer;
 
-}
+    }
 
-button{
+    /* =========================
 
-  font-family:inherit;
+       HEADER
 
-  cursor:pointer;
+    ========================== */
 
-}
+    .site-header {
 
-/* HEADER */
+      height: 105px;
 
-header{
+      background: #ffffff;
 
-  position:sticky;
+      display: flex;
 
-  top:0;
+      align-items: center;
 
-  z-index:1000;
+      justify-content: space-between;
 
-  background:rgba(255,255,255,.96);
+      padding: 0 6%;
 
-  backdrop-filter:blur(12px);
+      position: relative;
 
-  border-bottom:1px solid #e8edf3;
+      z-index: 100;
 
-}
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 
-.navbar{
+    }
 
-  max-width:1200px;
+    .logo-wrap {
 
-  margin:auto;
+      display: flex;
 
-  min-height:76px;
+      flex-direction: column;
 
-  padding:12px 20px;
+      align-items: flex-start;
 
-  display:flex;
+    }
 
-  align-items:center;
+    .zingy-logo {
 
-  justify-content:space-between;
+      text-decoration: none;
 
-  gap:20px;
+      font-size: 32px;
 
-}
+      font-weight: 800;
 
-.logo{
+      letter-spacing: -1.8px;
 
-  font-size:27px;
+      line-height: 1;
 
-  font-weight:900;
+    }
 
-  letter-spacing:-1px;
+    .logo-zingy {
 
-  color:#f45135;
+      color: #f4513d;
 
-  white-space:nowrap;
+    }
 
-}
+    .logo-travels {
 
-.logo span{
+      color: #17233d;
 
-  color:#172033;
+    }
 
-}
+    .logo-tagline {
 
-.logo small{
+      margin-top: 7px;
 
-  display:block;
+      color: #7b8496;
 
-  font-size:9px;
+      font-size: 9px;
 
-  color:#718096;
+      font-weight: 700;
 
-  letter-spacing:2px;
+      letter-spacing: 3px;
 
-  margin-top:-3px;
+    }
 
-  font-weight:700;
+    .header-enquire {
 
-}
+      border: 0;
 
-.nav-links{
+      background: #f4513d;
 
-  display:flex;
+      color: #fff;
 
-  align-items:center;
+      padding: 16px 25px;
 
-  gap:26px;
+      border-radius: 35px;
 
-  font-weight:700;
+      font-size: 16px;
 
-  font-size:14px;
+      font-weight: 700;
 
-}
+      box-shadow: 0 8px 20px rgba(244,81,61,0.20);
 
-.nav-links a:hover{
+    }
 
-  color:#f45135;
+    .header-enquire:hover {
 
-}
+      transform: translateY(-2px);
 
-.nav-btn{
+    }
 
-  background:#f45135;
+    /* =========================
 
-  color:white;
+       HERO
 
-  padding:12px 18px;
+    ========================== */
 
-  border-radius:25px;
+    .hero {
 
-  border:0;
+      min-height: 720px;
 
-  font-weight:800;
+      position: relative;
 
-}
+      display: flex;
 
-.nav-btn:hover{
+      align-items: center;
 
-  background:#dc3f25;
+      overflow: hidden;
 
-}
+      background:
 
-/* HERO */
+        linear-gradient(
 
-.hero{
+          90deg,
 
-  min-height:590px;
+          rgba(15,28,48,0.72),
 
-  display:flex;
+          rgba(15,28,48,0.38),
 
-  align-items:center;
+          rgba(15,28,48,0.12)
 
-  position:relative;
+        ),
 
-  overflow:hidden;
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85")
 
-  background:
+        center center / cover no-repeat;
 
-    linear-gradient(90deg,rgba(8,18,35,.78),rgba(8,18,35,.35),rgba(8,18,35,.08)),
+    }
 
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85")
+    .hero-content {
 
-    center/cover;
+      width: 100%;
 
-}
+      max-width: 1200px;
 
-.hero-content{
+      margin: auto;
 
-  width:100%;
+      padding: 70px 6%;
 
-  max-width:1200px;
+      color: white;
 
-  margin:auto;
+    }
 
-  padding:80px 20px;
+    .hero-pill {
 
-  color:white;
+      display: inline-flex;
 
-}
+      align-items: center;
 
-.hero-tag{
+      gap: 8px;
 
-  display:inline-block;
+      padding: 12px 22px;
 
-  background:rgba(255,255,255,.15);
+      border-radius: 40px;
 
-  border:1px solid rgba(255,255,255,.3);
+      border: 1px solid rgba(255,255,255,0.45);
 
-  backdrop-filter:blur(8px);
+      background: rgba(255,255,255,0.10);
 
-  padding:8px 15px;
+      backdrop-filter: blur(8px);
 
-  border-radius:30px;
+      font-size: 16px;
 
-  font-size:13px;
+      font-weight: 700;
 
-  font-weight:800;
+      margin-bottom: 28px;
 
-  margin-bottom:18px;
+    }
 
-}
+    .hero h1 {
 
-.hero h1{
+      font-size: clamp(52px, 7vw, 88px);
 
-  font-size:clamp(42px,7vw,76px);
+      line-height: 0.98;
 
-  line-height:.98;
+      letter-spacing: -3px;
 
-  max-width:760px;
+      max-width: 800px;
 
-  letter-spacing:-3px;
+      margin-bottom: 28px;
 
-  margin-bottom:22px;
+    }
 
-}
+    .hero h1 span {
 
-.hero h1 span{
+      color: #ff6049;
 
-  color:#ff704d;
+    }
 
-}
+    .hero-description {
 
-.hero p{
+      max-width: 720px;
 
-  max-width:600px;
+      font-size: 20px;
 
-  font-size:18px;
+      line-height: 1.6;
 
-  color:#eef3f8;
+      margin-bottom: 38px;
 
-  margin-bottom:30px;
+      color: rgba(255,255,255,0.94);
 
-}
+    }
 
-.hero-buttons{
+    .hero-buttons {
 
-  display:flex;
+      display: flex;
 
-  flex-wrap:wrap;
+      gap: 18px;
 
-  gap:12px;
+      flex-wrap: wrap;
 
-}
+    }
 
-.primary-btn,
+    .primary-btn,
 
-.secondary-btn{
+    .secondary-btn {
 
-  border:0;
+      border: 0;
 
-  padding:15px 24px;
+      padding: 19px 34px;
 
-  border-radius:30px;
+      border-radius: 45px;
 
-  font-weight:800;
+      font-size: 18px;
 
-  font-size:15px;
+      font-weight: 700;
 
-}
+    }
 
-.primary-btn{
+    .primary-btn {
 
-  background:#f45135;
+      background: #ff513d;
 
-  color:white;
+      color: white;
 
-}
+      box-shadow: 0 12px 28px rgba(255,81,61,0.28);
 
-.primary-btn:hover{
+    }
 
-  background:#dc3f25;
+    .secondary-btn {
 
-}
+      background: white;
 
-.secondary-btn{
+      color: #17233d;
 
-  background:white;
+    }
 
-  color:#172033;
+    /* =========================
 
-}
+       INTRO CARDS
 
-.secondary-btn:hover{
+    ========================== */
 
-  background:#f2f5f8;
+    .intro-section {
 
-}
+      max-width: 1200px;
 
-/* QUICK FEATURES */
+      margin: -55px auto 0;
 
-.quick-features{
+      padding: 0 5%;
 
-  max-width:1100px;
+      position: relative;
 
-  margin:-48px auto 0;
+      z-index: 5;
 
-  position:relative;
+    }
 
-  z-index:5;
+    .intro-card {
 
-  padding:0 20px;
+      background: white;
 
-}
+      border-radius: 32px;
 
-.features-box{
+      box-shadow: 0 20px 60px rgba(20,35,60,0.12);
 
-  background:white;
+      overflow: hidden;
 
-  border-radius:22px;
+    }
 
-  box-shadow:0 15px 45px rgba(20,30,50,.12);
+    .intro-item {
 
-  display:grid;
+      display: flex;
 
-  grid-template-columns:repeat(3,1fr);
+      align-items: center;
 
-  overflow:hidden;
+      gap: 22px;
 
-}
+      padding: 28px 35px;
 
-.feature{
+      border-bottom: 1px solid #edf0f4;
 
-  padding:24px;
+    }
 
-  display:flex;
+    .intro-item:last-child {
 
-  gap:14px;
+      border-bottom: 0;
 
-  align-items:center;
+    }
 
-  border-right:1px solid #edf0f4;
+    .intro-icon {
 
-}
+      min-width: 68px;
 
-.feature:last-child{
+      height: 68px;
 
-  border-right:0;
+      border-radius: 22px;
 
-}
+      display: flex;
 
-.feature-icon{
+      align-items: center;
 
-  width:48px;
+      justify-content: center;
 
-  height:48px;
+      background: #fff1ed;
 
-  border-radius:14px;
+      font-size: 30px;
 
-  background:#fff0ec;
+    }
 
-  display:flex;
+    .intro-item h3 {
 
-  align-items:center;
+      font-size: 21px;
 
-  justify-content:center;
+      margin-bottom: 7px;
 
-  font-size:24px;
+    }
 
-  flex-shrink:0;
+    .intro-item p {
 
-}
+      color: #7a8497;
 
-.feature h3{
+      font-size: 15px;
 
-  font-size:15px;
+    }
 
-  margin-bottom:3px;
+    /* =========================
 
-}
+       DESTINATIONS
 
-.feature p{
+    ========================== */
 
-  color:#718096;
+    .destinations {
 
-  font-size:12px;
+      max-width: 1250px;
 
-}
+      margin: 100px auto;
 
-/* COMMON */
+      padding: 0 5%;
 
-.section{
+    }
 
-  max-width:1200px;
+    .section-heading {
 
-  margin:auto;
+      text-align: center;
 
-  padding:80px 20px;
+      margin-bottom: 45px;
 
-}
+    }
 
-.section-heading{
+    .section-heading .small-title {
 
-  text-align:center;
+      color: #f4513d;
 
-  margin-bottom:40px;
+      font-size: 14px;
 
-}
+      font-weight: 800;
 
-.section-heading .eyebrow{
+      letter-spacing: 2px;
 
-  color:#f45135;
+      text-transform: uppercase;
 
-  font-weight:900;
+      margin-bottom: 10px;
 
-  font-size:13px;
+    }
 
-  text-transform:uppercase;
+    .section-heading h2 {
 
-  letter-spacing:2px;
+      font-size: clamp(34px, 5vw, 52px);
 
-  margin-bottom:8px;
+      margin-bottom: 12px;
 
-}
+      letter-spacing: -1.5px;
 
-.section-heading h2{
+    }
 
-  font-size:clamp(30px,5vw,46px);
+    .section-heading p {
 
-  letter-spacing:-1.5px;
+      color: #778196;
 
-  margin-bottom:10px;
+      font-size: 17px;
 
-}
+    }
 
-.section-heading p{
+    .destination-grid {
 
-  color:#718096;
+      display: grid;
 
-  max-width:650px;
+      grid-template-columns: repeat(3, 1fr);
 
-  margin:auto;
+      gap: 22px;
 
-}
+    }
 
-/* DESTINATION CARDS */
+    .destination-card {
 
-.destinations{
+      height: 370px;
 
-  display:grid;
+      position: relative;
 
-  grid-template-columns:repeat(4,1fr);
+      overflow: hidden;
 
-  gap:20px;
+      border-radius: 25px;
 
-}
+      cursor: pointer;
 
-.destination-card{
+      box-shadow: 0 12px 35px rgba(20,35,60,0.12);
 
-  background:white;
+    }
 
-  border-radius:20px;
+    .destination-card img {
 
-  overflow:hidden;
+      width: 100%;
 
-  box-shadow:0 8px 30px rgba(25,35,50,.08);
+      height: 100%;
 
-  transition:.25s ease;
+      object-fit: cover;
 
-  cursor:pointer;
+      display: block;
 
-}
+      transition: transform 0.5s ease;
 
-.destination-card:hover{
+    }
 
-  transform:translateY(-7px);
+    .destination-card:hover img {
 
-  box-shadow:0 18px 40px rgba(25,35,50,.15);
+      transform: scale(1.07);
 
-}
+    }
 
-.destination-image{
+    .destination-overlay {
 
-  height:230px;
+      position: absolute;
 
-  position:relative;
+      inset: 0;
 
-  overflow:hidden;
+      display: flex;
 
-  background:linear-gradient(135deg,#dbeafe,#fed7aa);
+      flex-direction: column;
 
-}
+      justify-content: flex-end;
 
-.destination-image img{
+      padding: 25px;
 
-  width:100%;
+      background: linear-gradient(
 
-  height:100%;
+        transparent 35%,
 
-  object-fit:cover;
+        rgba(8,18,32,0.82)
 
-  display:block;
+      );
 
-  transition:.3s ease;
+      color: white;
 
-}
+    }
 
-.destination-card:hover .destination-image img{
+    .destination-overlay h3 {
 
-  transform:scale(1.05);
+      font-size: 27px;
 
-}
+      margin-bottom: 5px;
 
-.destination-badge{
+    }
 
-  position:absolute;
+    .destination-overlay p {
 
-  top:13px;
+      color: rgba(255,255,255,0.88);
 
-  left:13px;
+      font-size: 14px;
 
-  background:white;
+    }
 
-  color:#172033;
+    /* =========================
 
-  padding:6px 10px;
+       WHY ZINGY
 
-  border-radius:20px;
+    ========================== */
 
-  font-size:11px;
+    .why-section {
 
-  font-weight:900;
+      background: #17233d;
 
-}
+      color: white;
 
-.destination-content{
+      padding: 90px 5%;
 
-  padding:18px;
+    }
 
-}
+    .why-container {
 
-.destination-content h3{
+      max-width: 1200px;
 
-  font-size:21px;
+      margin: auto;
 
-  margin-bottom:5px;
+    }
 
-}
+    .why-section .section-heading {
 
-.destination-content p{
+      margin-bottom: 50px;
 
-  color:#718096;
+    }
 
-  font-size:13px;
+    .why-section .section-heading h2 {
 
-  margin-bottom:15px;
+      color: white;
 
-}
+    }
 
-.explore{
+    .why-section .section-heading p {
 
-  color:#f45135;
+      color: #b8c0cf;
 
-  font-weight:900;
+    }
 
-  font-size:13px;
+    .why-grid {
 
-}
+      display: grid;
 
-/* SPECIAL BANNER */
+      grid-template-columns: repeat(4, 1fr);
 
-.banner{
+      gap: 20px;
 
-  max-width:1160px;
+    }
 
-  margin:10px auto 80px;
+    .why-card {
 
-  padding:0 20px;
+      padding: 30px 24px;
 
-}
+      border: 1px solid rgba(255,255,255,0.12);
 
-.banner-inner{
+      border-radius: 22px;
 
-  border-radius:28px;
+      background: rgba(255,255,255,0.05);
 
-  overflow:hidden;
+    }
 
-  min-height:360px;
+    .why-card .icon {
 
-  display:flex;
+      font-size: 30px;
 
-  align-items:center;
+      margin-bottom: 18px;
 
-  background:
+    }
 
-    linear-gradient(90deg,rgba(13,25,43,.85),rgba(13,25,43,.25)),
+    .why-card h3 {
 
-    url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=85")
+      font-size: 19px;
 
-    center/cover;
+      margin-bottom: 10px;
 
-}
+    }
 
-.banner-content{
+    .why-card p {
 
-  padding:50px;
+      color: #b8c0cf;
 
-  color:white;
+      font-size: 14px;
 
-  max-width:650px;
+      line-height: 1.6;
 
-}
+    }
 
-.banner-content h2{
+    /* =========================
 
-  font-size:clamp(32px,5vw,55px);
+       CTA
 
-  line-height:1;
+    ========================== */
 
-  margin-bottom:15px;
+    .cta-section {
 
-}
+      padding: 90px 5%;
 
-.banner-content p{
+      background: #f7f8fa;
 
-  color:#eef3f8;
+    }
 
-  margin-bottom:22px;
+    .cta-box {
 
-}
+      max-width: 1150px;
 
-/* WHY US */
+      margin: auto;
 
-.why-grid{
+      border-radius: 35px;
 
-  display:grid;
+      padding: 65px 7%;
 
-  grid-template-columns:repeat(4,1fr);
+      text-align: center;
 
-  gap:18px;
+      color: white;
 
-}
+      background:
 
-.why-card{
+        linear-gradient(
 
-  background:white;
+          90deg,
 
-  border:1px solid #edf0f4;
+          rgba(244,81,61,0.94),
 
-  border-radius:20px;
+          rgba(255,104,78,0.91)
 
-  padding:26px;
+        ),
 
-}
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80")
 
-.why-icon{
+        center / cover;
 
-  font-size:30px;
+    }
 
-  margin-bottom:15px;
+    .cta-box h2 {
 
-}
+      font-size: clamp(35px, 5vw, 54px);
 
-.why-card h3{
+      margin-bottom: 15px;
 
-  margin-bottom:7px;
+    }
 
-}
+    .cta-box p {
 
-.why-card p{
+      font-size: 18px;
 
-  color:#718096;
+      margin-bottom: 30px;
 
-  font-size:13px;
+      color: rgba(255,255,255,0.9);
 
-}
+    }
 
-/* CTA */
+    .cta-btn {
 
-.cta{
+      border: 0;
 
-  max-width:1160px;
+      background: white;
 
-  margin:0 auto 80px;
+      color: #f4513d;
 
-  padding:0 20px;
+      padding: 17px 30px;
 
-}
+      border-radius: 35px;
 
-.cta-inner{
+      font-size: 17px;
 
-  border-radius:28px;
+      font-weight: 800;
 
-  padding:50px;
+    }
 
-  background:linear-gradient(135deg,#f45135,#ff795f);
+    /* =========================
 
-  color:white;
+       FOOTER
 
-  display:flex;
+    ========================== */
 
-  align-items:center;
+    footer {
 
-  justify-content:space-between;
+      background: #101a2d;
 
-  gap:30px;
+      color: white;
 
-}
+      padding: 55px 6% 25px;
 
-.cta h2{
+    }
 
-  font-size:clamp(28px,4vw,44px);
+    .footer-container {
 
-  line-height:1.05;
+      max-width: 1200px;
 
-  margin-bottom:10px;
+      margin: auto;
 
-}
+      display: grid;
 
-.cta p{
+      grid-template-columns: 2fr 1fr 1fr;
 
-  opacity:.9;
+      gap: 50px;
 
-}
+    }
 
-.cta .primary-btn{
+    .footer-logo {
 
-  background:white;
+      font-size: 30px;
 
-  color:#f45135;
+      font-weight: 800;
 
-  white-space:nowrap;
+      margin-bottom: 12px;
 
-}
+    }
 
-/* FOOTER */
+    .footer-logo span {
 
-footer{
+      color: #ff5b46;
 
-  background:#111827;
+    }
 
-  color:white;
+    .footer-about {
 
-}
+      color: #aeb7c7;
 
-.footer-inner{
+      line-height: 1.7;
 
-  max-width:1200px;
+      max-width: 450px;
 
-  margin:auto;
+    }
 
-  padding:55px 20px 25px;
+    footer h4 {
 
-  display:grid;
+      margin-bottom: 15px;
 
-  grid-template-columns:2fr 1fr 1fr;
+      font-size: 16px;
 
-  gap:40px;
+    }
 
-}
+    footer p {
 
-.footer-logo{
+      color: #aeb7c7;
 
-  font-size:28px;
+      line-height: 1.8;
 
-  font-weight:900;
+      font-size: 14px;
 
-  color:#ff704d;
+    }
 
-  margin-bottom:10px;
+    .footer-bottom {
 
-}
+      max-width: 1200px;
 
-.footer-logo span{
+      margin: 45px auto 0;
 
-  color:white;
+      padding-top: 20px;
 
-}
+      border-top: 1px solid rgba(255,255,255,0.1);
 
-.footer p{
+      text-align: center;
 
-  color:#aab4c3;
+      color: #7e899c;
 
-  font-size:13px;
+      font-size: 13px;
 
-  max-width:400px;
+    }
 
-}
+    /* =========================
 
-.footer h3{
+       FLOATING CHAT
 
-  margin-bottom:15px;
+    ========================== */
 
-  font-size:15px;
+    .chat-button {
 
-}
+      position: fixed;
 
-.footer-links{
+      right: 20px;
 
-  display:flex;
+      bottom: 25px;
 
-  flex-direction:column;
+      width: 62px;
 
-  gap:9px;
+      height: 62px;
 
-  color:#aab4c3;
+      border-radius: 50%;
 
-  font-size:13px;
+      border: 0;
 
-}
+      background: #20d66b;
 
-.footer-links a:hover{
+      color: white;
 
-  color:white;
+      font-size: 28px;
 
-}
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
 
-.footer-bottom{
+      z-index: 500;
 
-  max-width:1200px;
+    }
 
-  margin:auto;
+    /* =========================
 
-  padding:20px;
+       ENQUIRY MODAL
 
-  border-top:1px solid #273244;
+    ========================== */
 
-  color:#8d99aa;
+    .modal {
 
-  font-size:12px;
+      position: fixed;
 
-  text-align:center;
+      inset: 0;
 
-}
+      background: rgba(8,18,32,0.68);
 
-/* FLOATING WHATSAPP */
+      backdrop-filter: blur(5px);
 
-.whatsapp{
+      display: none;
 
-  position:fixed;
+      align-items: center;
 
-  right:18px;
+      justify-content: center;
 
-  bottom:18px;
+      padding: 20px;
 
-  width:58px;
+      z-index: 1000;
 
-  height:58px;
+    }
 
-  border-radius:50%;
+    .modal.active {
 
-  background:#25d366;
+      display: flex;
 
-  color:white;
+    }
 
-  display:flex;
+    .modal-box {
 
-  align-items:center;
+      width: 100%;
 
-  justify-content:center;
+      max-width: 520px;
 
-  font-size:27px;
+      max-height: 92vh;
 
-  z-index:900;
+      overflow-y: auto;
 
-  box-shadow:0 8px 25px rgba(0,0,0,.2);
+      background: white;
 
-}
+      border-radius: 28px;
 
-/* MODAL */
+      padding: 30px;
 
-.modal{
+      position: relative;
 
-  display:none;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.25);
 
-  position:fixed;
+    }
 
-  inset:0;
+    .modal-close {
 
-  z-index:2000;
+      position: absolute;
 
-  background:rgba(0,0,0,.65);
+      right: 18px;
 
-  padding:20px;
+      top: 15px;
 
-  align-items:center;
+      width: 38px;
 
-  justify-content:center;
+      height: 38px;
 
-}
+      border-radius: 50%;
 
-.modal.active{
+      border: 0;
 
-  display:flex;
+      background: #f1f3f6;
 
-}
+      font-size: 22px;
 
-.modal-box{
+      color: #17233d;
 
-  width:100%;
+    }
 
-  max-width:500px;
+    .modal-box h2 {
 
-  max-height:90vh;
+      font-size: 30px;
 
-  overflow:auto;
+      margin-bottom: 7px;
 
-  background:white;
+    }
 
-  border-radius:24px;
+    .modal-box > p {
 
-  padding:28px;
+      color: #7b8496;
 
-  position:relative;
+      margin-bottom: 25px;
 
-  box-shadow:0 25px 70px rgba(0,0,0,.25);
+    }
 
-}
+    .form-group {
 
-.close{
+      margin-bottom: 16px;
 
-  position:absolute;
+    }
 
-  right:18px;
+    .form-group label {
 
-  top:15px;
+      display: block;
 
-  width:38px;
+      font-size: 13px;
 
-  height:38px;
+      font-weight: 700;
 
-  border:0;
+      margin-bottom: 7px;
 
-  border-radius:50%;
+      color: #3c465a;
 
-  background:#f2f4f7;
+    }
 
-  font-size:22px;
+    .form-group input,
 
-}
+    .form-group select,
 
-.modal-box h2{
+    .form-group textarea {
 
-  margin-bottom:5px;
+      width: 100%;
 
-  font-size:28px;
+      border: 1px solid #dce1e8;
 
-}
+      border-radius: 13px;
 
-.modal-box > p{
+      padding: 14px;
 
-  color:#718096;
+      font-size: 15px;
 
-  font-size:13px;
+      outline: none;
 
-  margin-bottom:20px;
+      background: #fafbfc;
 
-}
+    }
 
-.form-group{
+    .form-group textarea {
 
-  margin-bottom:14px;
+      min-height: 90px;
 
-}
+      resize: vertical;
 
-.form-group label{
+    }
 
-  display:block;
+    .submit-btn {
 
-  font-size:12px;
+      width: 100%;
 
-  font-weight:800;
+      border: 0;
 
-  margin-bottom:6px;
+      background: #f4513d;
 
-}
+      color: white;
 
-.form-group input,
+      padding: 16px;
 
-.form-group select,
+      border-radius: 14px;
 
-.form-group textarea{
+      font-size: 16px;
 
-  width:100%;
+      font-weight: 800;
 
-  border:1px solid #dce2e9;
+      margin-top: 5px;
 
-  border-radius:12px;
+    }
 
-  padding:13px;
+    /* =========================
 
-  font-size:14px;
+       MOBILE
 
-  outline:none;
+    ========================== */
 
-}
+    @media (max-width: 800px) {
 
-.form-group input:focus,
+      .site-header {
 
-.form-group select:focus,
+        height: 105px;
 
-.form-group textarea:focus{
+        padding: 0 25px;
 
-  border-color:#f45135;
+      }
 
-}
+      .zingy-logo {
 
-.form-group textarea{
+        font-size: 27px;
 
-  min-height:90px;
+      }
 
-  resize:vertical;
+      .logo-tagline {
 
-}
+        font-size: 7px;
 
-.submit-btn{
+        letter-spacing: 2px;
 
-  width:100%;
+      }
 
-  border:0;
+      .header-enquire {
 
-  background:#f45135;
+        padding: 14px 19px;
 
-  color:white;
+        font-size: 14px;
 
-  padding:15px;
+      }
 
-  border-radius:13px;
+      .hero {
 
-  font-weight:900;
+        min-height: 700px;
 
-  font-size:15px;
+        align-items: center;
 
-}
+        background-position: center;
 
-/* MOBILE */
+      }
 
-@media(max-width:950px){
+      .hero-content {
 
-  .nav-links{
+        padding: 70px 32px 100px;
 
-    display:none;
+      }
 
-  }
+      .hero-pill {
 
-  .destinations{
+        font-size: 14px;
 
-    grid-template-columns:repeat(2,1fr);
+        padding: 11px 17px;
 
-  }
+      }
 
-  .why-grid{
+      .hero h1 {
 
-    grid-template-columns:repeat(2,1fr);
+        font-size: 55px;
 
-  }
+        letter-spacing: -2.5px;
 
-}
+      }
 
-@media(max-width:650px){
+      .hero-description {
 
-  .navbar{
+        font-size: 17px;
 
-    min-height:68px;
+        line-height: 1.55;
 
-    padding:10px 16px;
+      }
 
-  }
+      .hero-buttons {
 
-  .logo{
+        gap: 12px;
 
-    font-size:23px;
+      }
 
-  }
+      .primary-btn,
 
-  .logo small{
+      .secondary-btn {
 
-    font-size:7px;
+        padding: 17px 25px;
 
-  }
+        font-size: 16px;
 
-  .nav-btn{
+      }
 
-    padding:10px 14px;
+      .intro-section {
 
-    font-size:12px;
+        margin-top: -45px;
 
-  }
+        padding: 0 32px;
 
-  .hero{
+      }
 
-    min-height:600px;
+      .intro-item {
 
-  }
+        padding: 24px 20px;
 
-  .hero-content{
+        gap: 15px;
 
-    padding:80px 20px 110px;
+      }
 
-  }
+      .intro-icon {
 
-  .hero h1{
+        min-width: 58px;
 
-    font-size:47px;
+        height: 58px;
 
-    letter-spacing:-2px;
+        border-radius: 18px;
 
-  }
+        font-size: 25px;
 
-  .hero p{
+      }
 
-    font-size:15px;
+      .intro-item h3 {
 
-  }
+        font-size: 18px;
 
-  .quick-features{
+      }
 
-    margin-top:-35px;
+      .intro-item p {
 
-  }
+        font-size: 13px;
 
-  .features-box{
+        line-height: 1.4;
 
-    grid-template-columns:1fr;
+      }
 
-  }
+      .destinations {
 
-  .feature{
+        margin: 75px auto;
 
-    border-right:0;
+        padding: 0 25px;
 
-    border-bottom:1px solid #edf0f4;
+      }
 
-  }
+      .destination-grid {
 
-  .feature:last-child{
+        grid-template-columns: 1fr;
 
-    border-bottom:0;
+        gap: 18px;
 
-  }
+      }
 
-  .section{
+      .destination-card {
 
-    padding:60px 16px;
+        height: 320px;
 
-  }
+      }
 
-  .destinations{
+      .why-grid {
 
-    grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
-    gap:12px;
+      }
 
-  }
+      .footer-container {
 
-  .destination-image{
+        grid-template-columns: 1fr;
 
-    height:165px;
+        gap: 30px;
 
-  }
+      }
 
-  .destination-content{
+    }
 
-    padding:13px;
+    @media (max-width: 480px) {
 
-  }
+      .site-header {
 
-  .destination-content h3{
+        padding: 0 18px;
 
-    font-size:17px;
+      }
 
-  }
+      .zingy-logo {
 
-  .destination-content p{
+        font-size: 24px;
 
-    font-size:11px;
+      }
 
-  }
+      .logo-tagline {
 
-  .banner{
+        font-size: 6.5px;
 
-    padding:0 16px;
+        letter-spacing: 1.7px;
 
-    margin-bottom:60px;
+      }
 
-  }
+      .header-enquire {
 
-  .banner-inner{
+        padding: 12px 15px;
 
-    min-height:420px;
+        font-size: 13px;
 
-  }
+      }
 
-  .banner-content{
+      .hero {
 
-    padding:30px;
+        min-height: 680px;
 
-  }
+      }
 
-  .why-grid{
+      .hero-content {
 
-    grid-template-columns:1fr 1fr;
+        padding: 60px 25px 90px;
 
-    gap:12px;
+      }
 
-  }
+      .hero h1 {
 
-  .why-card{
+        font-size: 48px;
 
-    padding:18px;
+      }
 
-  }
+      .hero-description {
 
-  .why-card h3{
+        font-size: 16px;
 
-    font-size:15px;
+      }
 
-  }
+      .hero-buttons {
 
-  .why-card p{
+        flex-direction: column;
 
-    font-size:11px;
+      }
 
-  }
+      .primary-btn,
 
-  .cta{
+      .secondary-btn {
 
-    padding:0 16px;
+        width: 100%;
 
-    margin-bottom:60px;
+        text-align: center;
 
-  }
+      }
 
-  .cta-inner{
+      .intro-section {
 
-    padding:30px 25px;
+        padding: 0 18px;
 
-    flex-direction:column;
+      }
 
-    align-items:flex-start;
+      .why-section {
 
-  }
+        padding: 70px 20px;
 
-  .footer-inner{
+      }
 
-    grid-template-columns:1fr;
+      .why-grid {
 
-    gap:25px;
+        grid-template-columns: 1fr;
 
-  }
+      }
 
-}
+      .cta-section {
 
-@media(max-width:380px){
+        padding: 65px 18px;
 
-  .destinations{
+      }
 
-    grid-template-columns:1fr;
+      .cta-box {
 
-  }
+        padding: 50px 25px;
 
-  .destination-image{
+      }
 
-    height:210px;
+      .modal-box {
 
-  }
+        padding: 25px 20px;
 
-}
+        border-radius: 22px;
 
-</style>
+      }
+
+    }
+
+  </style>
 
 </head>
 
 <body>
 
-<!-- HEADER -->
+  <!-- =========================
 
-<header>
+       HEADER
 
-  <div class="navbar">
+  ========================== -->
 
-    <a href="#" class="logo">
+  <header class="site-header">
 
-      Zingy<span>Travels</span>
+    <div class="logo-wrap">
 
-      <small>TRAVEL • EXPLORE • EXPERIENCE</small>
+      <!-- NEW LOGO - BUILT DIRECTLY INTO HTML -->
 
-    </a>
+      <a href="#" class="zingy-logo">
 
-    <nav class="nav-links">
+        <span class="logo-zingy">Zingy</span><span class="logo-travels">Travels</span>
 
-      <a href="#destinations">Destinations</a>
+      </a>
 
-      <a href="#why">Why Us</a>
+      <div class="logo-tagline">
 
-      <a href="#contact">Contact</a>
+        TRAVEL • EXPLORE • EXPERIENCE
 
-    </nav>
+      </div>
 
-    <button class="nav-btn" onclick="openEnquiry('General Enquiry')">
+    </div>
+
+    <button class="header-enquire" onclick="openEnquiry()">
 
       Enquire Now
 
     </button>
 
-  </div>
+  </header>
 
-</header>
+  <!-- =========================
 
-<!-- HERO -->
+       HERO
 
-<section class="hero">
+  ========================== -->
 
-  <div class="hero-content">
+  <section class="hero">
 
-    <div class="hero-tag">
+    <div class="hero-content">
 
-      ✈️ YOUR JOURNEY STARTS HERE
+      <div class="hero-pill">
+
+        ✈️ YOUR JOURNEY STARTS HERE
+
+      </div>
+
+      <h1>
+
+        Travel more.<br>
+
+        <span>Live more.</span>
+
+      </h1>
+
+      <p class="hero-description">
+
+        Discover unforgettable holidays, international tours and
+
+        customised travel experiences with Zingy Travels.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="primary-btn" onclick="scrollToDestinations()">
+
+          Explore Holidays
+
+        </button>
+
+        <button class="secondary-btn" onclick="openEnquiry()">
+
+          Plan My Trip
+
+        </button>
+
+      </div>
 
     </div>
 
-    <h1>
+  </section>
 
-      Travel more.<br>
+  <!-- =========================
 
-      <span>Live more.</span>
+       INTRO
 
-    </h1>
+  ========================== -->
 
-    <p>
+  <section class="intro-section">
 
-      Discover unforgettable holidays, international tours and
+    <div class="intro-card">
 
-      customized travel experiences with ZingyTravels.
+      <div class="intro-item">
 
-    </p>
+        <div class="intro-icon">🌍</div>
 
-    <div class="hero-buttons">
+        <div>
 
-      <button class="primary-btn"
+          <h3>Worldwide Holidays</h3>
 
-              onclick="document.getElementById('destinations').scrollIntoView()">
+          <p>International & domestic destinations</p>
 
-        Explore Holidays
+        </div>
 
-      </button>
+      </div>
 
-      <button class="secondary-btn"
+      <div class="intro-item">
 
-              onclick="openEnquiry('Custom Holiday')">
+        <div class="intro-icon">✈️</div>
 
-        Plan My Trip
+        <div>
+
+          <h3>Customised Packages</h3>
+
+          <p>Trips designed around your preferences</p>
+
+        </div>
+
+      </div>
+
+      <div class="intro-item">
+
+        <div class="intro-icon">🏨</div>
+
+        <div>
+
+          <h3>Complete Travel Solutions</h3>
+
+          <p>Hotels, transfers, sightseeing & experiences</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+
+       DESTINATIONS
+
+  ========================== -->
+
+  <section class="destinations" id="destinations">
+
+    <div class="section-heading">
+
+      <div class="small-title">
+
+        Explore the world
+
+      </div>
+
+      <h2>Popular Holidays</h2>
+
+      <p>
+
+        Choose your destination and let us plan the rest.
+
+      </p>
+
+    </div>
+
+    <div class="destination-grid">
+
+      <!-- MALDIVES -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Maldives')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Maldives">
+
+        <div class="destination-overlay">
+
+          <h3>Maldives</h3>
+
+          <p>Island escapes & luxury resorts</p>
+
+        </div>
+
+      </div>
+
+      <!-- BALI -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Bali')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Bali">
+
+        <div class="destination-overlay">
+
+          <h3>Bali</h3>
+
+          <p>Beaches, culture & adventure</p>
+
+        </div>
+
+      </div>
+
+      <!-- SRI LANKA -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Sri Lanka')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1586613831721-7f9e2b1b0e6c?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Sri Lanka">
+
+        <div class="destination-overlay">
+
+          <h3>Sri Lanka</h3>
+
+          <p>Wildlife, beaches & beautiful landscapes</p>
+
+        </div>
+
+      </div>
+
+      <!-- SINGAPORE -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Singapore')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Singapore">
+
+        <div class="destination-overlay">
+
+          <h3>Singapore</h3>
+
+          <p>City adventures & family holidays</p>
+
+        </div>
+
+      </div>
+
+      <!-- THAILAND -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Thailand')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Thailand">
+
+        <div class="destination-overlay">
+
+          <h3>Thailand</h3>
+
+          <p>Beaches, islands & vibrant cities</p>
+
+        </div>
+
+      </div>
+
+      <!-- AUSTRALIA -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Australia')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Australia">
+
+        <div class="destination-overlay">
+
+          <h3>Australia</h3>
+
+          <p>Iconic cities & unforgettable experiences</p>
+
+        </div>
+
+      </div>
+
+      <!-- EUROPE -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Europe')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Europe">
+
+        <div class="destination-overlay">
+
+          <h3>Europe</h3>
+
+          <p>Classic cities & multi-country tours</p>
+
+        </div>
+
+      </div>
+
+      <!-- KERALA -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Kerala')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Kerala">
+
+        <div class="destination-overlay">
+
+          <h3>Kerala</h3>
+
+          <p>Backwaters, hills & tropical beauty</p>
+
+        </div>
+
+      </div>
+
+      <!-- AMRITSAR -->
+
+      <div class="destination-card"
+
+           onclick="openEnquiry('Amritsar')">
+
+        <img
+
+          src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Golden Temple Amritsar">
+
+        <div class="destination-overlay">
+
+          <h3>Amritsar</h3>
+
+          <p>Golden Temple & Punjab heritage</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+
+       WHY ZINGY
+
+  ========================== -->
+
+  <section class="why-section">
+
+    <div class="why-container">
+
+      <div class="section-heading">
+
+        <div class="small-title">
+
+          Why travel with us
+
+        </div>
+
+        <h2>Travel made simple.</h2>
+
+        <p>
+
+          From planning to coming back home, we're with you.
+
+        </p>
+
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+
+          <div class="icon">💡</div>
+
+          <h3>Expert Planning</h3>
+
+          <p>
+
+            Travel plans created around your interests, dates and budget.
+
+          </p>
+
+        </div>
+
+        <div class="why-card">
+
+          <div class="icon">💰</div>
+
+          <h3>Value Focused</h3>
+
+          <p>
+
+            Carefully planned holidays with great value and flexibility.
+
+          </p>
+
+        </div>
+
+        <div class="why-card">
+
+          <div class="icon">🤝</div>
+
+          <h3>Personal Support</h3>
+
+          <p>
+
+            Speak to our travel team before and during your journey.
+
+          </p>
+
+        </div>
+
+        <div class="why-card">
+
+          <div class="icon">🌎</div>
+
+          <h3>Global Experiences</h3>
+
+          <p>
+
+            Domestic escapes and international adventures under one roof.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+
+       CTA
+
+  ========================== -->
+
+  <section class="cta-section">
+
+    <div class="cta-box">
+
+      <h2>Where will you go next?</h2>
+
+      <p>
+
+        Tell us what you have in mind and we'll help create your holiday.
+
+      </p>
+
+      <button class="cta-btn" onclick="openEnquiry()">
+
+        Start Planning
 
       </button>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <!-- =========================
 
-<!-- QUICK FEATURES -->
+       FOOTER
 
-<section class="quick-features">
+  ========================== -->
 
-  <div class="features-box">
+  <footer>
 
-    <div class="feature">
-
-      <div class="feature-icon">🌍</div>
+    <div class="footer-container">
 
       <div>
 
-        <h3>Worldwide Holidays</h3>
+        <div class="footer-logo">
 
-        <p>International & domestic destinations</p>
+          <span>Zingy</span>Travels
+
+        </div>
+
+        <p class="footer-about">
+
+          Travel • Explore • Experience
+
+          <br><br>
+
+          Your trusted partner for holidays,
+
+          tours and customised travel experiences.
+
+        </p>
 
       </div>
-
-    </div>
-
-    <div class="feature">
-
-      <div class="feature-icon">💰</div>
 
       <div>
 
-        <h3>Customized Packages</h3>
+        <h4>Popular Holidays</h4>
 
-        <p>Trips designed around you</p>
+        <p>
+
+          Maldives<br>
+
+          Bali<br>
+
+          Sri Lanka<br>
+
+          Thailand<br>
+
+          Singapore
+
+        </p>
 
       </div>
-
-    </div>
-
-    <div class="feature">
-
-      <div class="feature-icon">🤝</div>
 
       <div>
 
-        <h3>Personal Assistance</h3>
+        <h4>Explore More</h4>
 
-        <p>Support from booking to return</p>
+        <p>
 
-      </div>
+          Australia<br>
 
-    </div>
+          Europe<br>
 
-  </div>
+          Kerala<br>
 
-</section>
+          Amritsar<br>
 
-<!-- DESTINATIONS -->
+          Customised Tours
 
-<section class="section" id="destinations">
-
-  <div class="section-heading">
-
-    <div class="eyebrow">Explore the world</div>
-
-    <h2>Popular Holidays</h2>
-
-    <p>
-
-      From tropical beaches to iconic cities, choose your next
-
-      adventure and send us an enquiry.
-
-    </p>
-
-  </div>
-
-  <div class="destinations">
-
-    <!-- MALDIVES -->
-
-    <div class="destination-card"
-
-         onclick="openEnquiry('Maldives Holidays')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80"
-
-          alt="Maldives"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">BEACH ESCAPE</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Maldives</h3>
-
-        <p>Crystal waters, luxury resorts & island experiences.</p>
-
-        <div class="explore">Enquire Now →</div>
+        </p>
 
       </div>
 
     </div>
 
-    <!-- KERALA -->
+    <div class="footer-bottom">
 
-    <div class="destination-card"
-
-         onclick="openEnquiry('Kerala Tour')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80"
-
-          alt="Kerala"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">INDIA</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Kerala</h3>
-
-        <p>Backwaters, beaches, hills and unforgettable nature.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
+      © 2026 ZingyTravels. All rights reserved.
 
     </div>
 
-    <!-- SRI LANKA -->
+  </footer>
 
-    <div class="destination-card"
+  <!-- =========================
 
-         onclick="openEnquiry('Sri Lanka Holidays')">
+       FLOATING CHAT
 
-      <div class="destination-image">
+  ========================== -->
 
-        <img
+  <button class="chat-button" onclick="openEnquiry()" aria-label="Enquire">
 
-          src="https://images.unsplash.com/photo-1586613833064-9c2f5c0f1b91?auto=format&fit=crop&w=900&q=80"
+    💬
 
-          alt="Sri Lanka"
+  </button>
 
-          onerror="this.style.display='none';"
+  <!-- =========================
 
-        >
+       ENQUIRY MODAL
 
-        <div class="destination-badge">ISLAND</div>
+  ========================== -->
 
-      </div>
+  <div class="modal" id="enquiryModal">
 
-      <div class="destination-content">
+    <div class="modal-box">
 
-        <h3>Sri Lanka</h3>
+      <button class="modal-close" onclick="closeEnquiry()">
 
-        <p>Beaches, wildlife, culture and scenic hill country.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
-
-    </div>
-
-    <!-- SINGAPORE -->
-
-    <div class="destination-card"
-
-         onclick="openEnquiry('Singapore Holidays')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=80"
-
-          alt="Singapore"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">CITY ESCAPE</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Singapore</h3>
-
-        <p>Skyline views, attractions, shopping and family fun.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
-
-    </div>
-
-    <!-- THAILAND -->
-
-    <div class="destination-card"
-
-         onclick="openEnquiry('Thailand Holidays')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
-
-          alt="Thailand"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">TROPICAL</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Thailand</h3>
-
-        <p>Bangkok, Phuket, Krabi and tropical island escapes.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
-
-    </div>
-
-    <!-- BALI -->
-
-    <div class="destination-card"
-
-         onclick="openEnquiry('Bali Holidays')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
-
-          alt="Bali"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">BALI</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Bali</h3>
-
-        <p>Temples, beaches, rice terraces and romantic escapes.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
-
-    </div>
-
-    <!-- EUROPE -->
-
-    <div class="destination-card"
-
-         onclick="openEnquiry('Europe Tour')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
-
-          alt="Europe"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">EUROPE</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Europe</h3>
-
-        <p>Paris, Switzerland, Italy and unforgettable European tours.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
-
-    </div>
-
-    <!-- AUSTRALIA -->
-
-    <div class="destination-card"
-
-         onclick="openEnquiry('Australia Holidays')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d8?auto=format&fit=crop&w=900&q=80"
-
-          alt="Australia"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">AUSTRALIA</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Australia</h3>
-
-        <p>Sydney, Melbourne, Gold Coast and amazing experiences.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
-
-    </div>
-
-    <!-- AMRITSAR -->
-
-    <div class="destination-card"
-
-         onclick="openEnquiry('Amritsar Golden Temple')">
-
-      <div class="destination-image">
-
-        <img
-
-          src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?auto=format&fit=crop&w=900&q=80"
-
-          alt="Golden Temple Amritsar"
-
-          onerror="this.style.display='none';"
-
-        >
-
-        <div class="destination-badge">INDIA</div>
-
-      </div>
-
-      <div class="destination-content">
-
-        <h3>Amritsar</h3>
-
-        <p>Golden Temple, heritage, culture and Punjab experiences.</p>
-
-        <div class="explore">Enquire Now →</div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- EUROPE BANNER -->
-
-<section class="banner">
-
-  <div class="banner-inner">
-
-    <div class="banner-content">
-
-      <h2>Dreaming of Europe?</h2>
-
-      <p>
-
-        Let ZingyTravels create a memorable Europe holiday
-
-        designed around your dates, budget and interests.
-
-      </p>
-
-      <button class="primary-btn"
-
-              onclick="openEnquiry('Europe Tour')">
-
-        Plan Europe Trip
+        ×
 
       </button>
 
-    </div>
-
-  </div>
-
-</section>
-
-<!-- WHY US -->
-
-<section class="section" id="why">
-
-  <div class="section-heading">
-
-    <div class="eyebrow">Why ZingyTravels</div>
-
-    <h2>Travel made simple</h2>
-
-    <p>
-
-      We help you turn travel ideas into real journeys.
-
-    </p>
-
-  </div>
-
-  <div class="why-grid">
-
-    <div class="why-card">
-
-      <div class="why-icon">🧳</div>
-
-      <h3>Customized Trips</h3>
+      <h2>Plan Your Trip</h2>
 
       <p>
 
-        Your dates, preferences and budget come first.
+        Tell us a little about your holiday and our team will contact you.
 
       </p>
 
-    </div>
+      <form onsubmit="submitEnquiry(event)">
 
-    <div class="why-card">
+        <div class="form-group">
 
-      <div class="why-icon">🌍</div>
+          <label>Your Name</label>
 
-      <h3>Global Destinations</h3>
+          <input
 
-      <p>
+            type="text"
 
-        Domestic and international holidays under one roof.
+            id="name"
 
-      </p>
+            placeholder="Enter your name"
 
-    </div>
+            required>
 
-    <div class="why-card">
+        </div>
 
-      <div class="why-icon">💬</div>
+        <div class="form-group">
 
-      <h3>Easy Enquiry</h3>
+          <label>Mobile Number</label>
 
-      <p>
+          <input
 
-        Tell us what you need and our team will get back to you.
+            type="tel"
 
-      </p>
+            id="phone"
 
-    </div>
+            placeholder="Enter mobile number"
 
-    <div class="why-card">
+            required>
 
-      <div class="why-icon">❤️</div>
+        </div>
 
-      <h3>Travel With Confidence</h3>
+        <div class="form-group">
 
-      <p>
+          <label>Email</label>
 
-        Personal assistance throughout your holiday planning.
+          <input
 
-      </p>
+            type="email"
+
+            id="email"
+
+            placeholder="Enter email address">
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Destination</label>
+
+          <select id="destination">
+
+            <option value="">Select destination</option>
+
+            <option>Maldives</option>
+
+            <option>Bali</option>
+
+            <option>Sri Lanka</option>
+
+            <option>Singapore</option>
+
+            <option>Thailand</option>
+
+            <option>Australia</option>
+
+            <option>Europe</option>
+
+            <option>Kerala</option>
+
+            <option>Amritsar</option>
+
+            <option>Other</option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Travel Details</label>
+
+          <textarea
+
+            id="message"
+
+            placeholder="Travel dates, number of people, preferences, etc."></textarea>
+
+        </div>
+
+        <button class="submit-btn" type="submit">
+
+          Send Enquiry
+
+        </button>
+
+      </form>
 
     </div>
 
   </div>
 
-</section>
+  <!-- =========================
 
-<!-- CTA -->
+       JAVASCRIPT
 
-<section class="cta" id="contact">
+  ========================== -->
 
-  <div class="cta-inner">
+  <script>
 
-    <div>
+    function openEnquiry(destination = "") {
 
-      <h2>Ready for your next adventure?</h2>
+      const modal = document.getElementById("enquiryModal");
 
-      <p>
+      modal.classList.add("active");
 
-        Tell us where you want to go. We'll help plan the rest.
+      if (destination) {
 
-      </p>
+        document.getElementById("destination").value = destination;
 
-    </div>
+      }
 
-    <button class="primary-btn"
+      document.body.style.overflow = "hidden";
 
-            onclick="openEnquiry('General Enquiry')">
+    }
 
-      Send Enquiry
+    function closeEnquiry() {
 
-    </button>
+      document.getElementById("enquiryModal")
 
-  </div>
+        .classList.remove("active");
 
-</section>
+      document.body.style.overflow = "";
 
-<!-- FOOTER -->
+    }
 
-<footer>
+    function scrollToDestinations() {
 
-  <div class="footer-inner">
+      document.getElementById("destinations")
 
-    <div>
+        .scrollIntoView({
 
-      <div class="footer-logo">
+          behavior: "smooth"
 
-        Zingy<span>Travels</span>
+        });
 
-      </div>
+    }
 
-      <p>
+    function submitEnquiry(event) {
 
-        Holidays, tours and customized travel experiences
+      event.preventDefault();
 
-        designed to make every journey memorable.
+      const name =
 
-      </p>
+        document.getElementById("name").value;
 
-    </div>
+      const phone =
 
-    <div>
+        document.getElementById("phone").value;
 
-      <h3>Destinations</h3>
+      const email =
 
-      <div class="footer-links">
+        document.getElementById("email").value;
 
-        <a href="#destinations">Maldives</a>
+      const destination =
 
-        <a href="#destinations">Kerala</a>
+        document.getElementById("destination").value;
 
-        <a href="#destinations">Sri Lanka</a>
+      const message =
 
-        <a href="#destinations">Singapore</a>
+        document.getElementById("message").value;
 
-        <a href="#destinations">Thailand</a>
+      /*
 
-      </div>
+        WhatsApp enquiry.
 
-    </div>
+        IMPORTANT:
 
-    <div>
+        Replace 919999999999 below with
 
-      <h3>Explore</h3>
+        your actual WhatsApp number.
 
-      <div class="footer-links">
+      */
 
-        <a href="#destinations">Bali</a>
+      const whatsappNumber = "919999999999";
 
-        <a href="#destinations">Europe</a>
+      const text =
 
-        <a href="#destinations">Australia</a>
+        "New ZingyTravels Enquiry%0A%0A" +
 
-        <a href="#destinations">Amritsar</a>
+        "Name: " + encodeURIComponent(name) + "%0A" +
 
-        <a href="#contact">Contact Us</a>
+        "Mobile: " + encodeURIComponent(phone) + "%0A" +
 
-      </div>
+        "Email: " + encodeURIComponent(email) + "%0A" +
 
-    </div>
+        "Destination: " + encodeURIComponent(destination) + "%0A" +
 
-  </div>
+        "Travel Details: " + encodeURIComponent(message);
 
-  <div class="footer-bottom">
+      window.open(
 
-    © 2026 ZingyTravels. All rights reserved.
+        "https://wa.me/" + whatsappNumber + "?text=" + text,
 
-  </div>
+        "_blank"
 
-</footer>
+      );
 
-<!-- WHATSAPP -->
+    }
 
-<a
+    /* Close modal when clicking outside */
 
-  class="whatsapp"
+    document.getElementById("enquiryModal")
 
-  href="https://wa.me/919999999999?text=Hi%20ZingyTravels%2C%20I%20would%20like%20to%20enquire%20about%20a%20holiday."
+      .addEventListener("click", function(event) {
 
-  target="_blank"
+        if (event.target === this) {
 
-  aria-label="WhatsApp"
+          closeEnquiry();
 
->
+        }
 
-  💬
+      });
 
-</a>
+    /* ESC closes enquiry */
 
-<!-- ENQUIRY MODAL -->
+    document.addEventListener("keydown", function(event) {
 
-<div class="modal" id="enquiryModal">
+      if (event.key === "Escape") {
 
-  <div class="modal-box">
+        closeEnquiry();
 
-    <button class="close" onclick="closeEnquiry()">×</button>
+      }
 
-    <h2>Plan Your Holiday ✈️</h2>
+    });
 
-    <p>
-
-      Send us your details and we'll get back to you.
-
-    </p>
-
-    <form onsubmit="sendEnquiry(event)">
-
-      <div class="form-group">
-
-        <label>Your Name</label>
-
-        <input
-
-          type="text"
-
-          id="name"
-
-          placeholder="Enter your name"
-
-          required
-
-        >
-
-      </div>
-
-      <div class="form-group">
-
-        <label>Mobile Number</label>
-
-        <input
-
-          type="tel"
-
-          id="phone"
-
-          placeholder="Enter mobile number"
-
-          required
-
-        >
-
-      </div>
-
-      <div class="form-group">
-
-        <label>Holiday / Destination</label>
-
-        <select id="destination">
-
-          <option>Maldives Holidays</option>
-
-          <option>Kerala Tour</option>
-
-          <option>Sri Lanka Holidays</option>
-
-          <option>Singapore Holidays</option>
-
-          <option>Thailand Holidays</option>
-
-          <option>Bali Holidays</option>
-
-          <option>Europe Tour</option>
-
-          <option>Australia Holidays</option>
-
-          <option>Amritsar Golden Temple</option>
-
-          <option>Custom Holiday</option>
-
-          <option>General Enquiry</option>
-
-        </select>
-
-      </div>
-
-      <div class="form-group">
-
-        <label>Message</label>
-
-        <textarea
-
-          id="message"
-
-          placeholder="Tell us your travel dates, number of travellers and requirements..."
-
-        ></textarea>
-
-      </div>
-
-      <button class="submit-btn" type="submit">
-
-        Send Enquiry on WhatsApp
-
-      </button>
-
-    </form>
-
-  </div>
-
-</div>
-
-<script>
-
-/* ENQUIRY MODAL */
-
-function openEnquiry(destination){
-
-  document.getElementById("enquiryModal").classList.add("active");
-
-  document.getElementById("destination").value = destination;
-
-}
-
-function closeEnquiry(){
-
-  document.getElementById("enquiryModal").classList.remove("active");
-
-}
-
-document.getElementById("enquiryModal").addEventListener("click",function(e){
-
-  if(e.target === this){
-
-    closeEnquiry();
-
-  }
-
-});
-
-/* WHATSAPP ENQUIRY */
-
-function sendEnquiry(event){
-
-  event.preventDefault();
-
-  const name =
-
-    document.getElementById("name").value.trim();
-
-  const phone =
-
-    document.getElementById("phone").value.trim();
-
-  const destination =
-
-    document.getElementById("destination").value;
-
-  const message =
-
-    document.getElementById("message").value.trim();
-
-  const text =
-
-`Hi ZingyTravels,
-
-I would like to enquire about a holiday.
-
-Name: ${name}
-
-Mobile: ${phone}
-
-Destination: ${destination}
-
-Message: ${message || "Please share the available package options."}`;
-
-  /*
-
-    IMPORTANT:
-
-    Replace 919999999999 below with your actual
-
-    ZingyTravels WhatsApp number.
-
-  */
-
-  const whatsappNumber = "919999999999";
-
-  window.open(
-
-    "https://wa.me/" +
-
-    whatsappNumber +
-
-    "?text=" +
-
-    encodeURIComponent(text),
-
-    "_blank"
-
-  );
-
-}
-
-</script>
+  </script>
 
 </body>
 
